@@ -1,0 +1,1591 @@
+{
+  "version": 8,
+  "exportedAt": "2026-06-04T00:00:00Z",
+  "settings": {
+    "presetName": "Album Project",
+    "paramDefs": [
+      {
+        "id": "f1000000-0000-0000-0000-000000000001",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "f2000000-0000-0000-0000-000000000001",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "track",
+            "label": "Track",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "f2000000-0000-0000-0000-000000000002",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "stem",
+            "label": "Stem",
+            "color": "#7766aa",
+            "sortOrder": 1
+          },
+          {
+            "id": "f2000000-0000-0000-0000-000000000003",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "art",
+            "label": "Art",
+            "color": "#d68b2a",
+            "sortOrder": 2
+          },
+          {
+            "id": "f2000000-0000-0000-0000-000000000004",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "audio",
+            "label": "Audio",
+            "color": "#3d9e5f",
+            "sortOrder": 3
+          },
+          {
+            "id": "f2000000-0000-0000-0000-000000000005",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "task",
+            "label": "Task",
+            "color": "#888888",
+            "sortOrder": 4
+          },
+          {
+            "id": "f2000000-0000-0000-0000-000000000006",
+            "paramDefId": "f1000000-0000-0000-0000-000000000001",
+            "valueSlug": "release",
+            "label": "Release",
+            "color": "#c83030",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "f1000000-0000-0000-0000-000000000002",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Length (s)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "f1000000-0000-0000-0000-000000000003",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Status",
+        "paramType": "select",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": true,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "f2500000-0000-0000-0000-000000000001",
+            "paramDefId": "f1000000-0000-0000-0000-000000000003",
+            "valueSlug": "idea",
+            "label": "Idea",
+            "color": null,
+            "sortOrder": 0
+          },
+          {
+            "id": "f2500000-0000-0000-0000-000000000002",
+            "paramDefId": "f1000000-0000-0000-0000-000000000003",
+            "valueSlug": "doing",
+            "label": "In progress",
+            "color": null,
+            "sortOrder": 1
+          },
+          {
+            "id": "f2500000-0000-0000-0000-000000000003",
+            "paramDefId": "f1000000-0000-0000-0000-000000000003",
+            "valueSlug": "done",
+            "label": "Mastered",
+            "color": null,
+            "sortOrder": 2
+          }
+        ]
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "f3000000-0000-0000-0000-000000000001",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Relation",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "f4000000-0000-0000-0000-000000000001",
+            "paramDefId": "f3000000-0000-0000-0000-000000000001",
+            "valueSlug": "depends-on",
+            "label": "Depends on",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "f4000000-0000-0000-0000-000000000002",
+            "paramDefId": "f3000000-0000-0000-0000-000000000001",
+            "valueSlug": "part-of",
+            "label": "Part of",
+            "color": "#7766aa",
+            "sortOrder": 1
+          },
+          {
+            "id": "f4000000-0000-0000-0000-000000000003",
+            "paramDefId": "f3000000-0000-0000-0000-000000000001",
+            "valueSlug": "related",
+            "label": "Related",
+            "color": "#888888",
+            "sortOrder": 2
+          },
+          {
+            "id": "f4000000-0000-0000-0000-000000000004",
+            "paramDefId": "f3000000-0000-0000-0000-000000000001",
+            "valueSlug": "blocks",
+            "label": "Blocks",
+            "color": "#c83030",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "f3000000-0000-0000-0000-000000000002",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "f3000000-0000-0000-0000-000000000003",
+        "presetId": "f0000000-0000-0000-0000-000000000001",
+        "displayName": "Weight",
+        "paramType": "number",
+        "defaultValue": "2",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 2,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "f5000000-0000-0000-0000-000000000001",
+      "title": "Track 1: Neon Tides",
+      "description": "The title track and lead single.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000011",
+          "nodeId": "f5000000-0000-0000-0000-000000000001",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "track",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000012",
+          "nodeId": "f5000000-0000-0000-0000-000000000001",
+          "paramDefId": "f1000000-0000-0000-0000-000000000002",
+          "value": "210",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000013",
+          "nodeId": "f5000000-0000-0000-0000-000000000001",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000002",
+      "title": "Track 2: Afterglow",
+      "description": "Slow, reverb-heavy closer.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 544.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000021",
+          "nodeId": "f5000000-0000-0000-0000-000000000002",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "track",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000022",
+          "nodeId": "f5000000-0000-0000-0000-000000000002",
+          "paramDefId": "f1000000-0000-0000-0000-000000000002",
+          "value": "195",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000023",
+          "nodeId": "f5000000-0000-0000-0000-000000000002",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000003",
+      "title": "Track 3: Undertow",
+      "description": "Up-tempo, bass-driven.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000031",
+          "nodeId": "f5000000-0000-0000-0000-000000000003",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "track",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000032",
+          "nodeId": "f5000000-0000-0000-0000-000000000003",
+          "paramDefId": "f1000000-0000-0000-0000-000000000002",
+          "value": "230",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000033",
+          "nodeId": "f5000000-0000-0000-0000-000000000003",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000004",
+      "title": "Single: Neon Tides",
+      "description": "Lead single, dropped before the album.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 544.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000041",
+          "nodeId": "f5000000-0000-0000-0000-000000000004",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "release",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000042",
+          "nodeId": "f5000000-0000-0000-0000-000000000004",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000005",
+      "title": "Drum stems",
+      "description": "Programmed beats + live overdubs.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1280.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000051",
+          "nodeId": "f5000000-0000-0000-0000-000000000005",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "stem",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000052",
+          "nodeId": "f5000000-0000-0000-0000-000000000005",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000006",
+      "title": "Synth bass",
+      "description": "Mono sub + saw layer.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1664.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000061",
+          "nodeId": "f5000000-0000-0000-0000-000000000006",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "stem",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000062",
+          "nodeId": "f5000000-0000-0000-0000-000000000006",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000007",
+      "title": "Vocal comp",
+      "description": "Comped from four takes.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1280.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000071",
+          "nodeId": "f5000000-0000-0000-0000-000000000007",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "stem",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000072",
+          "nodeId": "f5000000-0000-0000-0000-000000000007",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000008",
+      "title": "Mix session",
+      "description": "Balance, automation, bus FX.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1664.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000081",
+          "nodeId": "f5000000-0000-0000-0000-000000000008",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000082",
+          "nodeId": "f5000000-0000-0000-0000-000000000008",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000009",
+      "title": "Mastering",
+      "description": "Loudness + final polish for release.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1472.0,
+      "y": 480.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000091",
+          "nodeId": "f5000000-0000-0000-0000-000000000009",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000092",
+          "nodeId": "f5000000-0000-0000-0000-000000000009",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000010",
+      "title": "Album cover",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "f9000000-0000-0000-0000-000000000010",
+          "nodeId": "f5000000-0000-0000-0000-000000000010",
+          "label": "Album cover",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\01-Recording-studio-console-for-DAW-work-20.jpg",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000101",
+          "nodeId": "f5000000-0000-0000-0000-000000000010",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000102",
+          "nodeId": "f5000000-0000-0000-0000-000000000010",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000011",
+      "title": "Single artwork",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "f9000000-0000-0000-0000-000000000011",
+          "nodeId": "f5000000-0000-0000-0000-000000000011",
+          "label": "Single artwork",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\02-Recording-studio-console-for-DAW-work-20.jpg",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000111",
+          "nodeId": "f5000000-0000-0000-0000-000000000011",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000112",
+          "nodeId": "f5000000-0000-0000-0000-000000000011",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000012",
+      "title": "Title track (rough)",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 1408.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "f9000000-0000-0000-0000-000000000012",
+          "nodeId": "f5000000-0000-0000-0000-000000000012",
+          "label": "Title track (rough)",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\music__jingles_SAX07.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000121",
+          "nodeId": "f5000000-0000-0000-0000-000000000012",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "audio",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000122",
+          "nodeId": "f5000000-0000-0000-0000-000000000012",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000013",
+      "title": "Hook idea",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1408.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "f9000000-0000-0000-0000-000000000013",
+          "nodeId": "f5000000-0000-0000-0000-000000000013",
+          "label": "Hook idea",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\sfx__confirmation_003.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000131",
+          "nodeId": "f5000000-0000-0000-0000-000000000013",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "audio",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000132",
+          "nodeId": "f5000000-0000-0000-0000-000000000013",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000014",
+      "title": "Lyric video (draft)",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 896.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "f9000000-0000-0000-0000-000000000014",
+          "nodeId": "f5000000-0000-0000-0000-000000000014",
+          "label": "Lyric video (draft)",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\preview.mp4",
+          "srcType": "file",
+          "mediaType": "video",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000141",
+          "nodeId": "f5000000-0000-0000-0000-000000000014",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000142",
+          "nodeId": "f5000000-0000-0000-0000-000000000014",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "video",
+      "width": 320,
+      "height": 200
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000015",
+      "title": "",
+      "description": "Lyrics, verse 1\n\nCity lights bleed into the bay,\nwe ride the neon tide away,\nhold the line till break of day.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 896.0,
+      "y": 1408.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 300,
+      "height": 180
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000016",
+      "title": "Distribute (DistroKid)",
+      "description": "Push to Spotify, Apple Music, etc.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1984.0,
+      "y": 1056.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000161",
+          "nodeId": "f5000000-0000-0000-0000-000000000016",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "release",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000162",
+          "nodeId": "f5000000-0000-0000-0000-000000000016",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000017",
+      "title": "Press kit",
+      "description": "Bio, cover, single, one-sheet.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1984.0,
+      "y": 1376.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f6000000-0000-0000-0000-000000000171",
+          "nodeId": "f5000000-0000-0000-0000-000000000017",
+          "paramDefId": "f1000000-0000-0000-0000-000000000001",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f6000000-0000-0000-0000-000000000172",
+          "nodeId": "f5000000-0000-0000-0000-000000000017",
+          "paramDefId": "f1000000-0000-0000-0000-000000000003",
+          "value": "idea",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "f5000000-0000-0000-0000-000000000018",
+      "title": "",
+      "description": "About this demo. An album project as a typed graph: tracks, stems, art, audio, and release tasks, with image / video / audio / note items and regions. Trace upstream of the single to see what it depends on.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1440.0,
+      "y": 1120.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 320,
+      "height": 200
+    }
+  ],
+  "edges": [
+    {
+      "id": "fe000000-0000-0000-0000-000000000001",
+      "sourceId": "f5000000-0000-0000-0000-000000000005",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000011",
+          "edgeId": "fe000000-0000-0000-0000-000000000001",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000012",
+          "edgeId": "fe000000-0000-0000-0000-000000000001",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000013",
+          "edgeId": "fe000000-0000-0000-0000-000000000001",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000002",
+      "sourceId": "f5000000-0000-0000-0000-000000000006",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000021",
+          "edgeId": "fe000000-0000-0000-0000-000000000002",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000022",
+          "edgeId": "fe000000-0000-0000-0000-000000000002",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000023",
+          "edgeId": "fe000000-0000-0000-0000-000000000002",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000003",
+      "sourceId": "f5000000-0000-0000-0000-000000000007",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000031",
+          "edgeId": "fe000000-0000-0000-0000-000000000003",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000032",
+          "edgeId": "fe000000-0000-0000-0000-000000000003",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000033",
+          "edgeId": "fe000000-0000-0000-0000-000000000003",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000004",
+      "sourceId": "f5000000-0000-0000-0000-000000000008",
+      "targetId": "f5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000041",
+          "edgeId": "fe000000-0000-0000-0000-000000000004",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000042",
+          "edgeId": "fe000000-0000-0000-0000-000000000004",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000043",
+          "edgeId": "fe000000-0000-0000-0000-000000000004",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000005",
+      "sourceId": "f5000000-0000-0000-0000-000000000008",
+      "targetId": "f5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000051",
+          "edgeId": "fe000000-0000-0000-0000-000000000005",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000052",
+          "edgeId": "fe000000-0000-0000-0000-000000000005",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000053",
+          "edgeId": "fe000000-0000-0000-0000-000000000005",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000006",
+      "sourceId": "f5000000-0000-0000-0000-000000000008",
+      "targetId": "f5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000061",
+          "edgeId": "fe000000-0000-0000-0000-000000000006",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000062",
+          "edgeId": "fe000000-0000-0000-0000-000000000006",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000063",
+          "edgeId": "fe000000-0000-0000-0000-000000000006",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000007",
+      "sourceId": "f5000000-0000-0000-0000-000000000009",
+      "targetId": "f5000000-0000-0000-0000-000000000008",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000071",
+          "edgeId": "fe000000-0000-0000-0000-000000000007",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000072",
+          "edgeId": "fe000000-0000-0000-0000-000000000007",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000073",
+          "edgeId": "fe000000-0000-0000-0000-000000000007",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000008",
+      "sourceId": "f5000000-0000-0000-0000-000000000004",
+      "targetId": "f5000000-0000-0000-0000-000000000009",
+      "sourceHandle": "right",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000081",
+          "edgeId": "fe000000-0000-0000-0000-000000000008",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000082",
+          "edgeId": "fe000000-0000-0000-0000-000000000008",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000083",
+          "edgeId": "fe000000-0000-0000-0000-000000000008",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000009",
+      "sourceId": "f5000000-0000-0000-0000-000000000001",
+      "targetId": "f5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000091",
+          "edgeId": "fe000000-0000-0000-0000-000000000009",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000092",
+          "edgeId": "fe000000-0000-0000-0000-000000000009",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000093",
+          "edgeId": "fe000000-0000-0000-0000-000000000009",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000010",
+      "sourceId": "f5000000-0000-0000-0000-000000000010",
+      "targetId": "f5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000101",
+          "edgeId": "fe000000-0000-0000-0000-000000000010",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000102",
+          "edgeId": "fe000000-0000-0000-0000-000000000010",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000103",
+          "edgeId": "fe000000-0000-0000-0000-000000000010",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000011",
+      "sourceId": "f5000000-0000-0000-0000-000000000011",
+      "targetId": "f5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000111",
+          "edgeId": "fe000000-0000-0000-0000-000000000011",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000112",
+          "edgeId": "fe000000-0000-0000-0000-000000000011",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000113",
+          "edgeId": "fe000000-0000-0000-0000-000000000011",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000012",
+      "sourceId": "f5000000-0000-0000-0000-000000000012",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000121",
+          "edgeId": "fe000000-0000-0000-0000-000000000012",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000122",
+          "edgeId": "fe000000-0000-0000-0000-000000000012",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000123",
+          "edgeId": "fe000000-0000-0000-0000-000000000012",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000013",
+      "sourceId": "f5000000-0000-0000-0000-000000000013",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000131",
+          "edgeId": "fe000000-0000-0000-0000-000000000013",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000132",
+          "edgeId": "fe000000-0000-0000-0000-000000000013",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000133",
+          "edgeId": "fe000000-0000-0000-0000-000000000013",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000014",
+      "sourceId": "f5000000-0000-0000-0000-000000000014",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000141",
+          "edgeId": "fe000000-0000-0000-0000-000000000014",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000142",
+          "edgeId": "fe000000-0000-0000-0000-000000000014",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000143",
+          "edgeId": "fe000000-0000-0000-0000-000000000014",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000015",
+      "sourceId": "f5000000-0000-0000-0000-000000000015",
+      "targetId": "f5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "right",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000151",
+          "edgeId": "fe000000-0000-0000-0000-000000000015",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000152",
+          "edgeId": "fe000000-0000-0000-0000-000000000015",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000153",
+          "edgeId": "fe000000-0000-0000-0000-000000000015",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000016",
+      "sourceId": "f5000000-0000-0000-0000-000000000007",
+      "targetId": "f5000000-0000-0000-0000-000000000008",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000161",
+          "edgeId": "fe000000-0000-0000-0000-000000000016",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "blocks",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000162",
+          "edgeId": "fe000000-0000-0000-0000-000000000016",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000163",
+          "edgeId": "fe000000-0000-0000-0000-000000000016",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#c83030"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000017",
+      "sourceId": "f5000000-0000-0000-0000-000000000016",
+      "targetId": "f5000000-0000-0000-0000-000000000009",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000171",
+          "edgeId": "fe000000-0000-0000-0000-000000000017",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000172",
+          "edgeId": "fe000000-0000-0000-0000-000000000017",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000173",
+          "edgeId": "fe000000-0000-0000-0000-000000000017",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000018",
+      "sourceId": "f5000000-0000-0000-0000-000000000016",
+      "targetId": "f5000000-0000-0000-0000-000000000010",
+      "sourceHandle": "left",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000181",
+          "edgeId": "fe000000-0000-0000-0000-000000000018",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000182",
+          "edgeId": "fe000000-0000-0000-0000-000000000018",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000183",
+          "edgeId": "fe000000-0000-0000-0000-000000000018",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "fe000000-0000-0000-0000-000000000019",
+      "sourceId": "f5000000-0000-0000-0000-000000000017",
+      "targetId": "f5000000-0000-0000-0000-000000000010",
+      "sourceHandle": "left",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "ff000000-0000-0000-0000-000000000191",
+          "edgeId": "fe000000-0000-0000-0000-000000000019",
+          "paramDefId": "f3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000192",
+          "edgeId": "fe000000-0000-0000-0000-000000000019",
+          "paramDefId": "f3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "ff000000-0000-0000-0000-000000000193",
+          "edgeId": "fe000000-0000-0000-0000-000000000019",
+          "paramDefId": "f3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    }
+  ],
+  "regions": [
+    {
+      "id": "f7000000-0000-0000-0000-000000000001",
+      "title": "Songs",
+      "x": -64.0,
+      "y": 176.0,
+      "width": 1120.0,
+      "height": 688.0,
+      "color": "#5588bb",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "f7000000-0000-0000-0000-000000000002",
+      "title": "Production",
+      "x": 1216.0,
+      "y": 176.0,
+      "width": 768.0,
+      "height": 608.0,
+      "color": "#7766aa",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "f7000000-0000-0000-0000-000000000003",
+      "title": "Art & assets",
+      "x": -64.0,
+      "y": 928.0,
+      "width": 1408.0,
+      "height": 768.0,
+      "color": "#d68b2a",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "f7000000-0000-0000-0000-000000000004",
+      "title": "Release",
+      "x": 1408.0,
+      "y": 928.0,
+      "width": 992.0,
+      "height": 768.0,
+      "color": "#c83030",
+      "createdAt": "2026-06-04T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+/* ─── Sidebar stats panel ────────────────────────────────────────── */
+.sidebar__stats-toggle {
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 4px;
+  letter-spacing: 0.6px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sidebar__stats-toggle:hover { background: var(--surface-3); color: var(--text); }
+
+.sidebar__filter-active-dot {
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 5px;
+  margin-left: 4px;
+  width: 5px;
+}
+
+.sidebar__stats {
+  background: var(--bg);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 2px;
+  padding: 6px 8px;
+}
+
+.stats-row {
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+  gap: 4px;
+  justify-content: space-between;
+  min-height: 18px;
+}
+
+.stats-label {
+  align-items: center;
+  color: var(--text-muted);
+  display: flex;
+  gap: 4px;
+}
+
+.stats-val {
+  color: var(--text);
+  font-family: Consolas, 'Cascadia Code', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats-val--name {
+  font-family: var(--font);
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stats-section-label {
+  color: var(--text-dim);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.stats-dot {
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 7px;
+  width: 7px;
+}

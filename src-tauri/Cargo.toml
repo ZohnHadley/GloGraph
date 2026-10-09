@@ -1,0 +1,52 @@
+[package]
+name = "tauri-app"
+version = "0.9.13"
+description = "GloGraph — local-first, scriptable causal & systems mapping"
+authors = ["GloGraph"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "tauri_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+chrono = "0.4"
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-single-instance = "2"
+tauri-plugin-clipboard-manager = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+uuid = { version = "1", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+axum = { version = "0.8", features = ["ws"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = { version = "0.1", features = ["sync"] }
+futures-util = "0.3"
+tower-http = { version = "0.6", features = ["cors"] }
+# Blocking HTTP client for the optional embeddings provider (runs in spawn_blocking).
+ureq = { version = "2", features = ["json"] }
+# Read the thumbnail Office files embed (docProps/thumbnail.*) for file-node previews.
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+# ── Live Share TLS (Phase: encrypt the LAN session) ────────────────────────────
+# The session server runs HTTPS/WSS with a self-signed cert generated per session;
+# the guest pins it by fingerprint (no CA needed). See src/tls.rs.
+rcgen = "0.13"                 # generate the per-session self-signed cert
+sha2 = "0.10"                  # cert fingerprint (SHA-256) for pinning
+rustls = "0.23"                # TLS + custom (pinning) cert verifier
+tokio-rustls = "0.26"          # async TLS for the guest WS client
+axum-server = { version = "0.7", features = ["tls-rustls"] }  # serve axum over TLS (host)
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "stream"] }  # guest HTTP/SSE proxy client
+tokio-tungstenite = { version = "0.26", features = ["rustls-tls-webpki-roots"] }               # guest WS proxy client
+

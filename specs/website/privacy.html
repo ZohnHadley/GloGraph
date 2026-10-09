@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GloGraph: Privacy Policy</title>
+  <meta name="description" content="How GloGraph handles your data: local-first app, cookieless analytics, email list only. Plain-language privacy policy." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#171717" />
+  <link rel="canonical" href="https://glograph.com/privacy" />
+  <meta property="og:title" content="GloGraph: Privacy Policy" />
+  <meta property="og:description" content="How GloGraph handles your data: local-first app, cookieless analytics, email list only." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glograph.com/privacy" />
+  <meta property="og:site_name" content="GloGraph" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Load fonts without blocking first paint: preload as style, swap to stylesheet on load. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Privacy-friendly analytics by Plausible. -->
+  <script async src="https://plausible.io/js/pa-Mik-SO17p-Kfv41bHW4Xo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__brand" href="/">GLOGRAPH</a>
+    <nav class="nav__links">
+      <a href="/#features">Features</a>
+      <a href="/#sdk">SDK</a>
+      <a href="/demo/">Demo</a>
+      <a href="/#plans">Plans</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="/#notify" class="btn btn--primary nav__cta" data-cta="nav-notify">Get early access</a>
+  </header>
+
+  <main>
+    <section class="section legal">
+      <div class="kicker">PRIVACY</div>
+      <h1>Privacy Policy</h1>
+      <p class="legal__updated">Last updated: 2 June 2026</p>
+
+      <p>This covers the GloGraph website (glograph.com) and the email list. It's written to be
+      readable, not lawyerly. GloGraph is an independent project based in Canada.</p>
+
+      <h2>The short version</h2>
+      <ul>
+        <li>The app is local-first: your graphs live in <code>.glograph</code> files on your own device. We never see or store them.</li>
+        <li>The website uses cookieless analytics, so there are no tracking cookies and no consent banner.</li>
+        <li>If you join the email list, we store your email to send GloGraph updates. Unsubscribe any time.</li>
+        <li>We don't sell your data or run third-party ad trackers.</li>
+      </ul>
+
+      <h2>The app (GloGraph desktop)</h2>
+      <p>Everything you create stays on your machine in local <code>.glograph</code> files (SQLite). The
+      app works fully offline and does not send your graphs anywhere. Its optional built-in HTTP API
+      binds only to your own computer (<code>127.0.0.1</code>) and is off by default.</p>
+
+      <h2>Website analytics</h2>
+      <p>We use Plausible Analytics to count visits and which buttons get clicked, so we can tell whether
+      people find GloGraph useful. Plausible is cookieless, does not collect personal data, and does not
+      build cross-site profiles. We only ever see aggregate numbers.</p>
+
+      <h2>Email list</h2>
+      <p>If you submit your email, it is stored with Buttondown (our email provider) so we can send you
+      GloGraph news and launch updates. We won't use it for anything else. Every email includes an
+      unsubscribe link, and you can ask us to delete you at any time (see Contact).</p>
+
+      <h2>What we don't do</h2>
+      <p>No selling or renting your data. No third-party advertising trackers. No cookie walls.</p>
+
+      <h2>Your choices &amp; rights</h2>
+      <p>You can unsubscribe from any email, or contact us to access or delete your data. We honor the
+      rights you have under your local laws, including PIPEDA (Canada), the GDPR (EU/UK), and the CCPA
+      (California).</p>
+
+      <h2>Contact</h2>
+      <p>Questions or data requests: <a href="mailto:glograph.app@gmail.com">glograph.app@gmail.com</a>.</p>
+
+      <p class="legal__note">This policy may be updated as the product grows; the "last updated" date
+      above reflects the current version. GloGraph is free to download and use.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">GLOGRAPH</div>
+    <div class="footer__meta">Local-first, scriptable causal &amp; systems mapping. © <span id="year"></span> GloGraph.</div>
+    <nav class="footer__links">
+      <a href="/#features">Features</a>
+      <a href="/#plans">Plans</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

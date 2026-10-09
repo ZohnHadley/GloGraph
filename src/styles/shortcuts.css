@@ -1,0 +1,35 @@
+/* ─── Keyboard Shortcuts tab ─────────────────────────────────────── */
+.shortcut-list { display: flex; flex-direction: column; gap: 4px; }
+
+.shortcut-row {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.shortcut-keys {
+  display: flex;
+  flex-shrink: 0;
+  gap: 3px;
+  justify-content: flex-end;
+  width: 120px;
+}
+
+.shortcut-key {
+  background: #343434;
+  border: 1px solid;
+  border-color: var(--border-hi) var(--border-lo) var(--border-lo) var(--border-hi);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  color: var(--text);
+  font-family: Consolas, 'Cascadia Code', monospace;
+  font-size: 10px;
+  min-width: 14px;
+  padding: 1px 5px;
+  text-align: center;
+}
+
+.shortcut-desc {
+  color: var(--text-muted);
+  font-size: 11px;
+}

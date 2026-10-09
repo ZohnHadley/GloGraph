@@ -1,0 +1,106 @@
+/* ─── Bookmark Bar ────────────────────────────────────────────────── */
+.bookmark-bar {
+  align-items: center;
+  background: #2a2a2a;
+  border-bottom: 1px solid var(--border-lo);
+  box-shadow: 0 1px 0 var(--border-subtle);
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+  height: 22px;
+  overflow: hidden;
+  padding: 0 8px;
+  user-select: none;
+}
+
+.bookmark-bar__label {
+  align-items: center;
+  color: var(--text-dim);
+  display: flex;
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 700;
+  gap: 4px;
+  letter-spacing: 0.8px;
+  padding-right: 4px;
+  text-transform: uppercase;
+}
+
+.bookmark-chip {
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-shrink: 0;
+  gap: 0;
+  height: 16px;
+  overflow: hidden;
+}
+
+.bookmark-chip__name {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 10px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.bookmark-chip__name:hover { background: var(--surface-3); color: var(--text); }
+
+.bookmark-chip__del {
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border-subtle);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  padding: 0 3px;
+}
+
+.bookmark-chip__del:hover { background: var(--surface-3); color: var(--danger); }
+
+.bookmark-bar__add {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+.bookmark-bar__nav {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  opacity: 0.7;
+  padding: 1px 2px;
+}
+.bookmark-bar__nav:hover { color: var(--text-muted); opacity: 1; }
+
+.bookmark-chip--active { border-color: var(--accent); }
+.bookmark-chip--active .bookmark-chip__name { color: var(--accent); }
+
+.bookmark-add-row {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+.bookmark-add-input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 10px;
+  height: 16px;
+  padding: 0 5px;
+  width: 110px;
+}
+
+.bookmark-add-input:focus {
+  border-color: var(--accent);
+  outline: none;
+}

@@ -1,0 +1,302 @@
+/* ─── Tab bar ──────────────────────────────────────────────────────── */
+.tab-bar {
+  align-items: stretch;
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-shrink: 0;
+  min-height: 28px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-bar__tab {
+  align-items: center;
+  border-right: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  font-size: 11px;
+  gap: 4px;
+  max-width: 180px;
+  min-width: 80px;
+  padding: 0 8px;
+  position: relative;
+  user-select: none;
+  white-space: nowrap;
+}
+.tab-bar__tab:hover { background: var(--surface-2); color: var(--text); }
+.tab-bar__tab--active {
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 500;
+}
+.tab-bar__tab--active::after {
+  background: var(--accent);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.tab-bar__tab-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-bar__rename-input {
+  background: var(--surface-3);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--text);
+  flex: 1;
+  font-size: 11px;
+  outline: none;
+  padding: 1px 4px;
+}
+
+.tab-bar__close {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: 16px;
+  justify-content: center;
+  padding: 0;
+  width: 16px;
+}
+.tab-bar__close:hover { background: var(--surface-3); color: var(--text); }
+
+.tab-bar__dirty {
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.tab-bar__new {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 0 8px;
+}
+.tab-bar__new:hover { color: var(--text); }
+
+.app__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.app-loading {
+  align-items: center;
+  background: var(--bg);
+  color: var(--text-muted);
+  display: flex;
+  font-size: 11px;
+  height: 100vh;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.app-loading--error {
+  color: #e05a5a;
+}
+
+/* ─── Status Bar ──────────────────────────────────────────────────── */
+.status-bar {
+  align-items: center;
+  background: #141414;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-dim);
+  display: flex;
+  flex-shrink: 0;
+  font-family: Consolas, 'Cascadia Code', monospace;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  gap: 6px;
+  height: 20px;
+  letter-spacing: 0.3px;
+  padding: 0 10px;
+  user-select: none;
+}
+
+.status-bar__file {
+  color: var(--text-muted);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-bar__sep {
+  background: var(--border-subtle);
+  flex-shrink: 0;
+  height: 10px;
+  width: 1px;
+}
+
+.status-bar__dot { color: var(--text-dim); opacity: 0.4; }
+
+.status-bar__stat { color: var(--text-dim); }
+
+.status-bar__undo { color: var(--accent); }
+
+/* ─── Menu Bar ────────────────────────────────────────────────────── */
+.menubar {
+  align-items: stretch;
+  background: #363636;
+  border-bottom: 1px solid var(--border-lo);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 1px 0 var(--border);
+  display: flex;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  z-index: 100;
+  user-select: none;
+}
+
+/* Menu label buttons (File, Edit, Preferences) */
+.menubar__menu {
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: default;
+  display: flex;
+  font-size: 11px;
+  height: 100%;
+  padding: 0 10px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.menubar__menu:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+}
+
+.menubar__menu--open {
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--text);
+}
+
+/* Vertical divider — double-line bevel */
+.menubar__sep {
+  background: var(--border-lo);
+  box-shadow: 1px 0 0 var(--border-hi);
+  flex-shrink: 0;
+  height: 16px;
+  margin: auto 3px;
+  width: 1px;
+}
+
+/* Stats readout */
+.menubar__stat {
+  color: var(--text-dim);
+  font-family: Consolas, 'Cascadia Code', monospace;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.4px;
+  margin-left: auto;
+  padding: 0 10px;
+  align-self: center;
+}
+
+/* Drop-down panel */
+.menu-dropdown {
+  background: #363636;
+  border: 1px solid;
+  border-color: var(--border-hi) var(--border-lo) var(--border-lo) var(--border-hi);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 6px 20px rgba(0, 0, 0, 0.85);
+  left: 0;
+  min-width: 190px;
+  padding: 2px 0;
+  position: absolute;
+  top: 100%;
+  z-index: 200;
+}
+
+.menu-dropdown__item {
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: default;
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  padding: 4px 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-dropdown__item:hover:not(:disabled) {
+  background: rgba(255, 176, 0, 0.14);
+  color: var(--accent);
+}
+
+.menu-dropdown__item:disabled {
+  color: var(--text-dim);
+  cursor: default;
+}
+
+.menu-dropdown__label {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+/* Fixed-width slot so labels align whether or not an item carries an icon. */
+.menu-dropdown__icon {
+  align-items: center;
+  color: var(--text-muted);
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 13px;
+  justify-content: center;
+  width: 13px;
+}
+
+.menu-dropdown__item:hover:not(:disabled) .menu-dropdown__icon {
+  color: var(--accent);
+}
+
+.menu-dropdown__shortcut {
+  color: var(--text-dim);
+  font-family: Consolas, 'Cascadia Code', monospace;
+  font-size: 10px;
+  margin-left: 24px;
+}
+
+.menu-dropdown__item:hover:not(:disabled) .menu-dropdown__shortcut {
+  color: rgba(255, 176, 0, 0.65);
+}
+
+.menu-dropdown__sep {
+  border: none;
+  border-top: 1px solid var(--border-lo);
+  box-shadow: 0 1px 0 var(--border);
+  margin: 2px 0;
+}

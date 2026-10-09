@@ -1,0 +1,123 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Error boundary fallback (src/components/ErrorBoundary.tsx). Hardcoded colours so
+   it reads correctly even if theming is part of the failure. */
+.error-boundary {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: #171717; color: #d2d2d2;
+  font-family: 'IBM Plex Sans', 'Segoe UI', Tahoma, system-ui, sans-serif;
+  padding: 24px; z-index: 99999;
+}
+.error-boundary__card {
+  max-width: 560px; width: 100%;
+  background: #212121; border: 1px solid #484848; border-radius: 4px;
+  padding: 24px;
+}
+.error-boundary__card h1 { font-size: 18px; margin-bottom: 10px; color: #f0f0f0; }
+.error-boundary__card p { font-size: 14px; line-height: 1.5; color: #b0b0b0; margin-bottom: 14px; }
+.error-boundary__msg {
+  font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 12px;
+  background: #141414; border: 1px solid #303030; border-left: 2px solid #c83030;
+  color: #e0934e; padding: 10px; border-radius: 2px; margin-bottom: 16px;
+  white-space: pre-wrap; word-break: break-word; max-height: 160px; overflow: auto;
+}
+.error-boundary__actions { margin-bottom: 14px; }
+.error-boundary__more summary { font-size: 12px; color: #949494; cursor: pointer; }
+.error-boundary__more pre {
+  margin-top: 8px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 11px;
+  color: #949494; background: #141414; border: 1px solid #303030; border-radius: 2px;
+  padding: 10px; white-space: pre-wrap; word-break: break-word; max-height: 220px; overflow: auto;
+}
+
+:root {
+  /* ── Background stack — near-black charcoal, no blue tint ─────── */
+  --bg:        #171717;
+  --surface:   #212121;
+  --surface-2: #2a2a2a;
+  --surface-3: #353535;
+
+  /* ── Border / bevel system ─────────────────────────────────────── */
+  --border:        #484848;
+  --border-strong: #585858;
+  --border-hi:     #6a6a6a;   /* raised-bevel highlight  (top / left)   */
+  --border-lo:     #0c0c0c;   /* raised-bevel shadow     (bottom / right)*/
+  --border-subtle: #1c1c1c;
+
+  /* ── Accent — vivid amber/gold (GloGraph signature) ──────────── */
+  --accent:     #ffb000;
+  --accent-dim: #6e4c00;  /* darkened amber — pressed / fills */
+  --accent-2:   #00b0c8;  /* industrial cyan — secondary */
+
+  /* ── Semantic ──────────────────────────────────────────────────── */
+  --danger:     #c83030;
+  --danger-dim: #4a1010;
+  --ok:         #3d9e5f;
+  --warn:       #c97a1a;
+
+  /* ── Text — warm neutral gray, no blue tint ────────────────────── */
+  /* Raised muted/dim for readability: #888/#7a7a7a were too close to the
+     lighter surfaces (--surface-2/3) to read comfortably. Hierarchy preserved
+     (dim < muted < text). See AESTHETIC_SPEC §1.5. */
+  --text:       #d2d2d2;
+  --text-muted: #a0a0a0;
+  --text-dim:   #949494;
+
+  /* ── Geometry — hard edges ─────────────────────────────────────── */
+  --radius:    2px;
+  --radius-sm: 1px;
+
+  /* ── Spacing scale (4px base grid) ──────────────────────────────────
+     Canonical steps for new UI. Dense surfaces also use 6px and 10px as
+     established insets (panel body padding = 10px). Prefer these tokens over
+     raw px in new components so spacing stays consistent. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, system-ui, sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Recessed / sunken inputs — bevel inverted vs raised panels */
+input, textarea, select {
+  background: #111;
+  border: 1px solid;
+  border-color: var(--border-lo) var(--border-strong) var(--border-strong) var(--border-lo);
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.55);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+  padding: 3px 6px;
+  width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.55);
+}
+
+select option { background: var(--surface-2); }
+textarea { resize: vertical; }
+
+button { cursor: pointer; font-family: inherit; font-size: 11px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.react-flow__renderer { background: var(--bg); }

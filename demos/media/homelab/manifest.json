@@ -1,0 +1,13 @@
+{
+  "license": "Public domain / CC0 \u2014 images: Wikimedia Commons (PD/CC0); audio: Kenney.nl CC0; video: synthesised from PD images",
+  "images": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\01-1U-rack-mount-server-cooling-system-fan-.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\02-EFTA00002522---Cluttered-server-rack-fil.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\03-Technician-with-laptop-working-on-server.jpg"
+  ],
+  "audio": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\music__jingles_NES00.ogg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\sfx__confirmation_004.ogg"
+  ],
+  "video": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\preview.mp4"
+}

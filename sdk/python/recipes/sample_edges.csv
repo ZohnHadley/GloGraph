@@ -1,0 +1,8 @@
+source,target,relationship,label
+UKR_22,OIL_22,amplifies,
+UKR_22,FOOD_22,amplifies,
+OIL_22,CPI_22,amplifies,supply-driven
+FOOD_22,CPI_22,amplifies,
+CPI_22,FED_22,caused_by,policy reaction
+FED_22,USD_22,caused_by,
+USD_22,EM_22,caused_by,

@@ -1,0 +1,14 @@
+{
+  "license": "CC0 (public domain) \u2014 Kenney.nl; video synthesised locally from CC0 art",
+  "images": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__Preview.png",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__SampleA.png",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__SampleB.png"
+  ],
+  "audio": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music-jingles__jingles_NES00.ogg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\interface-sounds__confirmation_002.ogg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\interface-sounds__confirmation_004.ogg"
+  ],
+  "video": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\gameplay-preview.mp4"
+}

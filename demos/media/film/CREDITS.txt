@@ -1,0 +1,3 @@
+GloGraph 'film' demo media — all public domain / CC0, commercial-safe, no attribution required.
+Images: Wikimedia Commons (filtered to Public Domain / CC0 via the Commons API).
+Audio: Kenney.nl CC0 packs. Video: generated locally from the PD images with ffmpeg.

@@ -1,0 +1,79 @@
+/* ─── Timeline Panel ─────────────────────────────────────────────────── */
+.timeline-panel {
+  background: #141414;
+  border-top: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+  height: 88px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.timeline-panel--empty {
+  align-items: center;
+  color: var(--text-dim);
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.timeline-track {
+  align-items: center;
+  display: flex;
+  gap: 0;
+  height: 100%;
+  min-width: max-content;
+  padding: 0 24px;
+  position: relative;
+}
+.timeline-line {
+  background: var(--border-subtle);
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.timeline-node {
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 4px;
+  padding: 8px 12px;
+  position: relative;
+}
+.timeline-node:hover .timeline-node__dot {
+  filter: brightness(1.4);
+  transform: scale(1.25);
+}
+.timeline-node__dot {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 10px;
+  transition: transform 120ms, filter 120ms;
+  width: 10px;
+}
+.timeline-node__label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.timeline-node__date {
+  color: var(--text-dim);
+  font-family: Consolas, monospace;
+  font-size: 9px;
+  white-space: nowrap;
+}
+.timeline-node__title {
+  color: var(--text-muted);
+  font-size: 10px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "GloGraph",
+  "version": "0.9.13",
+  "identifier": "com.glograph.dev",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "GloGraph",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "maximized": true,
+        "center": true,
+        "additionalBrowserArgs": "--disable-features=msWebOOUI,msPdfOOUI,msSmartScreenProtection --allow-running-insecure-content"
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": ["**"]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "GloGraph",
+    "copyright": "© 2026 GloGraph",
+    "category": "Productivity",
+    "shortDescription": "Scriptable causal & systems mapping",
+    "longDescription": "GloGraph is a local-first desktop workspace for building typed, queryable relational and causal graphs — map how events, concepts, and systems connect, with an embedded HTTP API and Python SDK for scripting.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "ext": ["glograph"],
+        "name": "GloGraph Project",
+        "description": "GloGraph graph file",
+        "role": "Editor"
+      }
+    ],
+    "windows": {
+      "signCommand": {
+        "cmd": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "C:\\Users\\Zzohn\\Desktop\\GloaGraphPorject\\GloGraphDesktopApplication\\scripts\\sign-windows.ps1",
+          "%1"
+        ]
+      }
+    }
+  }
+}

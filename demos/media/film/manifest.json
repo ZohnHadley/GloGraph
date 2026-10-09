@@ -1,0 +1,13 @@
+{
+  "license": "Public domain / CC0 \u2014 images: Wikimedia Commons (PD/CC0); audio: Kenney.nl CC0; video: synthesised from PD images",
+  "images": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\01-Le-Diamant-noir---film-de-Alfred-Machin-.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\02-Le-Diamant-noir---film-de-Alfred-Machin-.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\03-Le-Diamant-noir---film-de-Alfred-Machin-.jpg"
+  ],
+  "audio": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\music__Preview.ogg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\sfx__confirmation_002.ogg"
+  ],
+  "video": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\film\\preview.mp4"
+}

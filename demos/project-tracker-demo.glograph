@@ -1,0 +1,890 @@
+{
+  "version": 8,
+  "exportedAt": "2026-05-31T03:01:20.322701900+00:00",
+  "settings": {
+    "presetName": "Project Tracker",
+    "paramDefs": [
+      {
+        "id": "00000000-0000-0004-0004-000000000001",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Status",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0041-000000000001",
+            "paramDefId": "00000000-0000-0004-0004-000000000001",
+            "valueSlug": "todo",
+            "label": "To Do",
+            "color": "#888888",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0041-000000000002",
+            "paramDefId": "00000000-0000-0004-0004-000000000001",
+            "valueSlug": "in_progress",
+            "label": "In Progress",
+            "color": "#d68b2a",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0041-000000000005",
+            "paramDefId": "00000000-0000-0004-0004-000000000001",
+            "valueSlug": "in_review",
+            "label": "In Review",
+            "color": "#5588bb",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0041-000000000003",
+            "paramDefId": "00000000-0000-0004-0004-000000000001",
+            "valueSlug": "done",
+            "label": "Done",
+            "color": "#3d9e5f",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0005-0041-000000000004",
+            "paramDefId": "00000000-0000-0004-0004-000000000001",
+            "valueSlug": "blocked",
+            "label": "Blocked",
+            "color": "#c83030",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0004-0004-000000000003",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0043-000000000001",
+            "paramDefId": "00000000-0000-0004-0004-000000000003",
+            "valueSlug": "task",
+            "label": "Task",
+            "color": "#888888",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0043-000000000002",
+            "paramDefId": "00000000-0000-0004-0004-000000000003",
+            "valueSlug": "feature",
+            "label": "Feature",
+            "color": "#3d9e5f",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0043-000000000003",
+            "paramDefId": "00000000-0000-0004-0004-000000000003",
+            "valueSlug": "bug",
+            "label": "Bug",
+            "color": "#c83030",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0043-000000000004",
+            "paramDefId": "00000000-0000-0004-0004-000000000003",
+            "valueSlug": "epic",
+            "label": "Epic",
+            "color": "#5588bb",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0005-0043-000000000005",
+            "paramDefId": "00000000-0000-0004-0004-000000000003",
+            "valueSlug": "milestone",
+            "label": "Milestone",
+            "color": "#d68b2a",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0004-0004-000000000002",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Priority",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0042-000000000001",
+            "paramDefId": "00000000-0000-0004-0004-000000000002",
+            "valueSlug": "low",
+            "label": "Low",
+            "color": "#888888",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0042-000000000002",
+            "paramDefId": "00000000-0000-0004-0004-000000000002",
+            "valueSlug": "medium",
+            "label": "Medium",
+            "color": "#5588bb",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0042-000000000003",
+            "paramDefId": "00000000-0000-0004-0004-000000000002",
+            "valueSlug": "high",
+            "label": "High",
+            "color": "#d68b2a",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0042-000000000004",
+            "paramDefId": "00000000-0000-0004-0004-000000000002",
+            "valueSlug": "critical",
+            "label": "Critical",
+            "color": "#c83030",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0004-0004-000000000004",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Estimate (pts)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 3,
+        "options": []
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "00000000-0000-0006-0004-000000000001",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Relationship",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "00000000-0000-0007-0041-000000000001",
+            "paramDefId": "00000000-0000-0006-0004-000000000001",
+            "valueSlug": "depends_on",
+            "label": "Depends On",
+            "color": "#c83030",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0007-0041-000000000002",
+            "paramDefId": "00000000-0000-0006-0004-000000000001",
+            "valueSlug": "blocks",
+            "label": "Blocks",
+            "color": "#d68b2a",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0007-0041-000000000004",
+            "paramDefId": "00000000-0000-0006-0004-000000000001",
+            "valueSlug": "part_of",
+            "label": "Part Of",
+            "color": "#7766aa",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0007-0041-000000000005",
+            "paramDefId": "00000000-0000-0006-0004-000000000001",
+            "valueSlug": "triggers",
+            "label": "Triggers",
+            "color": "#00b0c8",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0007-0041-000000000003",
+            "paramDefId": "00000000-0000-0006-0004-000000000001",
+            "valueSlug": "related",
+            "label": "Related",
+            "color": "#5588bb",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0006-0004-000000000002",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0004-000000000003",
+        "presetId": "00000000-0000-0000-0000-000000000004",
+        "displayName": "Notes",
+        "paramType": "text",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 2,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "d-node-01",
+      "title": "Choose Your Niche",
+      "description": "Pick a topic you can talk about for years. The narrower and more specific, the better — 'true crime from medieval Europe' is a show; 'true crime' is a genre.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 128.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c824c7d9-89d8-4d8f-9e54-d39f83aeed2a",
+          "nodeId": "d-node-01",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "376d8e36-cc59-466e-a979-c9a84bf2f25f",
+          "nodeId": "d-node-01",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-02",
+      "title": "Plan First 10 Episodes",
+      "description": "Outline your first season before recording a word. Episode titles, guests, talking points. This is where you discover whether you actually have enough material.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 576.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "21253d00-874a-460c-bcb5-564662bf0f40",
+          "nodeId": "d-node-02",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "in_progress",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "8e2d834c-2b28-47c8-b0c0-33b9b965a22b",
+          "nodeId": "d-node-02",
+          "paramDefId": "00000000-0000-0004-0004-000000000002",
+          "value": null,
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "e3c665a4-bc1c-4093-a0ed-da08498df209",
+          "nodeId": "d-node-02",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "001112ff-397f-46cd-9fea-25aa71c69872",
+          "nodeId": "d-node-02",
+          "paramDefId": "00000000-0000-0004-0004-000000000004",
+          "value": null,
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-03",
+      "title": "Record Pilot Episode",
+      "description": "Record episode zero. Don't stress about production quality — focus on finding your voice and format. Nobody hears this one; it's for you.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 576.0,
+      "y": 704.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "3a53962b-3bf7-45cf-8c4d-7f7b4d4e9c88",
+          "nodeId": "d-node-03",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "5591e15c-6a5d-40af-926e-8f525db1ff01",
+          "nodeId": "d-node-03",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-04",
+      "title": "Design Cover Art",
+      "description": "Your thumbnail in a sea of thumbnails. Podcast art renders at 50×50px in most apps. Bold, legible, zero visual clutter.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 992.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c44e3cc9-2937-4ba3-9600-84c714ec5598",
+          "nodeId": "d-node-04",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "in_review",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "f11138e7-9e01-47d3-975f-bab2375ee3fb",
+          "nodeId": "d-node-04",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-05",
+      "title": "Write Show Notes Template",
+      "description": "A repeatable format for every episode: summary, timestamps, links, transcript. Write it once, fill it in forever. Saves hours per release.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 992.0,
+      "y": 704.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "0f937fa3-3ef2-413e-b86f-3e9c86b338e9",
+          "nodeId": "d-node-05",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "0d49c381-6218-48b5-8095-19e9c7a05245",
+          "nodeId": "d-node-05",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-06",
+      "title": "Set Up RSS Feed",
+      "description": "RSS is how podcasts reach every app at once. Buzzsprout, Anchor, or Transistor all handle hosting and feed generation. One feed, everywhere.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1472.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "1c10b4a6-64aa-4e48-b714-3d843bbaa478",
+          "nodeId": "d-node-06",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "42de0749-3d2b-4c8e-b870-bc09c95d1909",
+          "nodeId": "d-node-06",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-07",
+      "title": "Submit to Spotify & Apple",
+      "description": "Submit your RSS feed URL to Apple Podcasts and Spotify. Both take 24–72 hours to approve. Do this well before your launch date.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1856.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "db2d5488-3999-4509-9e85-8d63771baf67",
+          "nodeId": "d-node-07",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "07f40fa7-d3c6-4a9c-b965-68f5b31632bd",
+          "nodeId": "d-node-07",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "d-node-08",
+      "title": "Episode 1 Launch",
+      "description": "Your public debut. Schedule a date, tell your audience, and ship it. Perfect is the enemy of published — get it out the door.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1856.0,
+      "y": 704.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "f7a8c63b-0e58-4f12-9489-205859b6158d",
+          "nodeId": "d-node-08",
+          "paramDefId": "00000000-0000-0004-0004-000000000001",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "21cb5017-f2be-4027-b418-ae9c5ae2abe2",
+          "nodeId": "d-node-08",
+          "paramDefId": "00000000-0000-0004-0004-000000000003",
+          "value": "milestone",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "db2213ed-6a59-4cde-925c-60368aa9783d",
+      "title": "About this demo",
+      "description": "Note. A launch plan for a new podcast — tasks, dependencies, and milestones. Leave context next to tasks with notes like this — resize them and connect them to any node.",
+      "eventDate": null,
+      "dateAdded": "2026-06-02T00:00:00Z",
+      "x": 128.0,
+      "y": -128.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 280,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "d-edge-01",
+      "sourceId": "d-node-01",
+      "targetId": "d-node-02",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "7b8f50f2-ea0b-4783-868d-4ef1a33603f7",
+          "edgeId": "d-edge-01",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "triggers",
+          "isEnabled": true
+        },
+        {
+          "id": "9ab84953-00b3-4986-af0d-7a63a0ab8bbe",
+          "edgeId": "d-edge-01",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "4df8e40b-f1e4-4b22-95f7-6cceafda371d",
+          "edgeId": "d-edge-01",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Niche determines the episode roster and potential guests",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#00b0c8"
+    },
+    {
+      "id": "d-edge-02",
+      "sourceId": "d-node-01",
+      "targetId": "d-node-03",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "9009d157-81d0-424d-afd1-2dbe6fed5ca5",
+          "edgeId": "d-edge-02",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "triggers",
+          "isEnabled": true
+        },
+        {
+          "id": "cc1b4344-e2a7-4a05-9787-c1016e846aa8",
+          "edgeId": "d-edge-02",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bc3c7c90-5fb0-4ed7-9430-8458925cb138",
+          "edgeId": "d-edge-02",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Can't record anything meaningful without knowing your angle",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#00b0c8"
+    },
+    {
+      "id": "d-edge-03",
+      "sourceId": "d-node-02",
+      "targetId": "d-node-04",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "04643193-5e19-42a3-ad98-7427784f9c51",
+          "edgeId": "d-edge-03",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "dd4986b7-81a1-42df-8153-4616fc60507d",
+          "edgeId": "d-edge-03",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "e4124d99-6947-4a36-948e-d093f3baed26",
+          "edgeId": "d-edge-03",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Art style should reflect the tone of the episode content",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#5588bb"
+    },
+    {
+      "id": "d-edge-04",
+      "sourceId": "d-node-03",
+      "targetId": "d-node-06",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "6ff704df-28fe-428c-abe7-208da3d1380a",
+          "edgeId": "d-edge-04",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "depends_on",
+          "isEnabled": true
+        },
+        {
+          "id": "f792e9c7-4ba6-4ce4-abc9-7195826ffba1",
+          "edgeId": "d-edge-04",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "73da4ce9-03e9-4ed6-9f76-2da9d6b58abc",
+          "edgeId": "d-edge-04",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Need at least one episode ready before submitting an RSS feed",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "d-edge-05",
+      "sourceId": "d-node-04",
+      "targetId": "d-node-07",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "bf8cd14b-217c-449e-b330-5bdb2294f81f",
+          "edgeId": "d-edge-05",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "depends_on",
+          "isEnabled": true
+        },
+        {
+          "id": "a382a25a-86ad-475d-a585-ee9cf4163768",
+          "edgeId": "d-edge-05",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "5a92a517-0d9e-4c6d-8d46-f15baf4b01b3",
+          "edgeId": "d-edge-05",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Both Spotify and Apple require approved artwork at submission",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "d-edge-06",
+      "sourceId": "d-node-06",
+      "targetId": "d-node-07",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "b97b94ae-78b6-47bd-82ad-1dfab0520632",
+          "edgeId": "d-edge-06",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "depends_on",
+          "isEnabled": true
+        },
+        {
+          "id": "600739f6-56c1-4558-b852-b2c0414884c2",
+          "edgeId": "d-edge-06",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "3eb0c26a-a74a-4ef7-8354-b1f524171935",
+          "edgeId": "d-edge-06",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "The RSS feed URL is what you submit to each platform directory",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "d-edge-07",
+      "sourceId": "d-node-07",
+      "targetId": "d-node-08",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "paramValues": [
+        {
+          "id": "87ad3cc1-3620-49b0-b387-d414c48de1c1",
+          "edgeId": "d-edge-07",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "triggers",
+          "isEnabled": true
+        },
+        {
+          "id": "bea37d53-8177-40d9-9c00-e9a01378a73f",
+          "edgeId": "d-edge-07",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "5304ddd6-64dd-4000-8edb-acecbbf9d10d",
+          "edgeId": "d-edge-07",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Platform approval takes 24–72 hours; submit before launch day",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#00b0c8"
+    },
+    {
+      "id": "d-edge-08",
+      "sourceId": "d-node-05",
+      "targetId": "d-node-08",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "ce90f4f2-00bf-4e6b-b8d4-5715ea095b68",
+          "edgeId": "d-edge-08",
+          "paramDefId": "00000000-0000-0006-0004-000000000001",
+          "value": "part_of",
+          "isEnabled": true
+        },
+        {
+          "id": "e171f47d-37e3-4374-abac-71a6a1bf3335",
+          "edgeId": "d-edge-08",
+          "paramDefId": "00000000-0000-0006-0004-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cbe13b73-89a5-4779-89e9-965a155cf412",
+          "edgeId": "d-edge-08",
+          "paramDefId": "00000000-0000-0006-0004-000000000003",
+          "value": "Show notes are part of the Episode 1 deliverable",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#7766aa"
+    }
+  ],
+  "regions": [
+    {
+      "id": "d7000000-0000-0000-0000-000000000001",
+      "title": "Content Prep",
+      "x": 48.0,
+      "y": 96.0,
+      "width": 1216.0,
+      "height": 768.0,
+      "color": "#7766aa",
+      "zOrder": 0,
+      "isLocked": false,
+      "isMinimized": false,
+      "createdAt": "2026-05-30T20:23:37.448676100+00:00"
+    },
+    {
+      "id": "d7000000-0000-0000-0000-000000000002",
+      "title": "Publishing Pipeline",
+      "x": 1392.0,
+      "y": 96.0,
+      "width": 880.0,
+      "height": 768.0,
+      "color": "#3d9e5f",
+      "zOrder": 0,
+      "isLocked": false,
+      "isMinimized": false,
+      "createdAt": "2026-05-30T20:23:37.448676100+00:00"
+    }
+  ],
+  "bookmarks": null,
+  "graphNotes": null
+}

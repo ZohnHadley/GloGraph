@@ -1,0 +1,73 @@
+/* ─── Node card dimmed state (search/filter highlight) ───────────── */
+.node-card--dimmed {
+  opacity: 0.22;
+  transition: opacity 0.15s;
+}
+
+.node-card--dimmed:hover {
+  opacity: 0.55;
+}
+
+/* ─── Node card flash/pulse (navigate-to highlight) ─────────────── */
+@keyframes node-flash {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 176, 0, 0.7); }
+  40%  { box-shadow: 0 0 0 8px rgba(255, 176, 0, 0.3); }
+  100% { box-shadow: 0 0 0 12px rgba(255, 176, 0, 0); }
+}
+
+.node-card--flash {
+  animation: node-flash 1.2s ease-out forwards;
+}
+
+@keyframes snap-back-flash {
+  0%   { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.85); }
+  40%  { box-shadow: 0 0 0 7px rgba(192, 57, 43, 0.35); }
+  100% { box-shadow: 0 0 0 11px rgba(192, 57, 43, 0); }
+}
+
+.node--snap-back .node-card {
+  animation: snap-back-flash 0.4s ease-out forwards;
+}
+
+/* ─── Node meta (added date, etc.) ─────────────────────────────────── */
+.node-meta-added {
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+  padding: 2px 0 4px;
+}
+
+/* ─── Graph Notes (sidebar) ─────────────────────────────────────────── */
+.sidebar__notes-toggle {
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  font-size: 10px;
+  gap: 6px;
+  letter-spacing: 0.6px;
+  padding: 6px 8px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.sidebar__notes-toggle:hover { background: var(--surface-3); color: var(--text); }
+
+.sidebar__notes {
+  background: var(--bg);
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  display: block;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.45;
+  padding: 8px;
+  resize: none;
+  width: 100%;
+}
+.sidebar__notes:focus {
+  color: var(--text);
+  outline: none;
+}

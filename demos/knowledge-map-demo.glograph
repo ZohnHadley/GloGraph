@@ -1,0 +1,634 @@
+{
+  "version": 8,
+  "exportedAt": "2026-05-25T00:00:00Z",
+  "settings": {
+    "presetName": "Knowledge Map",
+    "paramDefs": [
+      {
+        "id": "c1000000-0000-0000-0000-000000000001",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "c2000000-0000-0000-0000-000000000001",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "concept",
+            "label": "Concept",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "c2000000-0000-0000-0000-000000000002",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "principle",
+            "label": "Claim",
+            "color": "#d68b2a",
+            "sortOrder": 1
+          },
+          {
+            "id": "c2000000-0000-0000-0000-000000000003",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "example",
+            "label": "Evidence",
+            "color": "#3d9e5f",
+            "sortOrder": 2
+          },
+          {
+            "id": "c2000000-0000-0000-0000-000000000004",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "method",
+            "label": "Method",
+            "color": "#7766aa",
+            "sortOrder": 3
+          },
+          {
+            "id": "c2000000-0000-0000-0000-000000000005",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "source",
+            "label": "Source",
+            "color": "#888888",
+            "sortOrder": 4
+          },
+          {
+            "id": "c2000000-0000-0000-0000-000000000006",
+            "paramDefId": "c1000000-0000-0000-0000-000000000001",
+            "valueSlug": "question",
+            "label": "Question",
+            "color": "#c83030",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "c1000000-0000-0000-0000-000000000002",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Confidence (%)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "c1000000-0000-0000-0000-000000000003",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Source",
+        "paramType": "text",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 2,
+        "options": []
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "c3000000-0000-0000-0000-000000000001",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Relation",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "c4000000-0000-0000-0000-000000000001",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "supports",
+            "label": "Supports",
+            "color": "#3d9e5f",
+            "sortOrder": 0
+          },
+          {
+            "id": "c4000000-0000-0000-0000-000000000002",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "contradicts",
+            "label": "Contradicts",
+            "color": "#c83030",
+            "sortOrder": 1
+          },
+          {
+            "id": "c4000000-0000-0000-0000-000000000003",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "extends",
+            "label": "Extends",
+            "color": "#5588bb",
+            "sortOrder": 2
+          },
+          {
+            "id": "c4000000-0000-0000-0000-000000000004",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "implies",
+            "label": "Implies",
+            "color": "#d68b2a",
+            "sortOrder": 3
+          },
+          {
+            "id": "c4000000-0000-0000-0000-000000000005",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "cites",
+            "label": "Cites",
+            "color": "#7766aa",
+            "sortOrder": 4
+          },
+          {
+            "id": "c4000000-0000-0000-0000-000000000006",
+            "paramDefId": "c3000000-0000-0000-0000-000000000001",
+            "valueSlug": "related",
+            "label": "Related",
+            "color": "#888888",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "c3000000-0000-0000-0000-000000000002",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "c3000000-0000-0000-0000-000000000003",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Weight",
+        "paramType": "number",
+        "defaultValue": "2",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "id": "c3000000-0000-0000-0000-000000000004",
+        "presetId": "c0000000-0000-0000-0000-000000000001",
+        "displayName": "Notes",
+        "paramType": "text",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 3,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "c5000000-0000-0000-0000-000000000001",
+      "title": "Ordinary World",
+      "description": "The hero's starting point — familiar, comfortable, limited. We meet Luke on Tatooine, Frodo in the Shire, Dorothy in Kansas. The status quo before the adventure begins.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 128.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000001",
+          "nodeId": "c5000000-0000-0000-0000-000000000001",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000002",
+      "title": "Call to Adventure",
+      "description": "A disruption that forces the hero out of their comfort zone. A message, a stranger, a crisis. The story actually starts here. Refusal is common — and temporary.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 512.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000002",
+          "nodeId": "c5000000-0000-0000-0000-000000000002",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000003",
+      "title": "Crossing the Threshold",
+      "description": "The point of no return. The hero commits to the journey by entering the special world. Ordinary rules no longer apply. This is where Act 1 ends.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 864.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000003",
+          "nodeId": "c5000000-0000-0000-0000-000000000003",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000004",
+      "title": "Road of Trials",
+      "description": "A gauntlet of tests, enemies, and allies. The hero fails often. Each trial is a lesson in disguise. This is where the protagonist is forged.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1248.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000004",
+          "nodeId": "c5000000-0000-0000-0000-000000000004",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000005",
+      "title": "The Supreme Ordeal",
+      "description": "The central crisis — the hero faces death (literal or symbolic) and must draw on everything learned so far. The darkest moment before the transformation.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1632.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000005",
+          "nodeId": "c5000000-0000-0000-0000-000000000005",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000006",
+      "title": "Return Transformed",
+      "description": "The hero returns carrying the prize. But the real change is internal — they are not the same person who left. Their world, or their place in it, has fundamentally shifted.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1248.0,
+      "y": 736.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000006",
+          "nodeId": "c5000000-0000-0000-0000-000000000006",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "concept",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "c5000000-0000-0000-0000-000000000007",
+      "title": "Campbell — The Hero with a Thousand Faces",
+      "description": "Campbell's foundational work identifying the monomyth: a single archetypal story structure found in myths, religious traditions, and folk tales across every human culture.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 128.0,
+      "y": 768.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "c6000000-0000-0000-0000-000000000007",
+          "nodeId": "c5000000-0000-0000-0000-000000000007",
+          "paramDefId": "c1000000-0000-0000-0000-000000000001",
+          "value": "source",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ]
+    },
+    {
+      "id": "d87c570a-0372-4303-88a2-e62ed0493f89",
+      "title": "About this demo",
+      "description": "Note. A knowledge map of Campbell's Hero's Journey — the stages of the monomyth and how they connect. Notes, images, video and audio are \"graph objects\" you can drop anywhere and wire together.",
+      "eventDate": null,
+      "dateAdded": "2026-06-02T00:00:00Z",
+      "x": 128.0,
+      "y": -128.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 280,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "ce000000-0000-0000-0000-000000000001",
+      "sourceId": "c5000000-0000-0000-0000-000000000001",
+      "targetId": "c5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000001",
+          "edgeId": "ce000000-0000-0000-0000-000000000001",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "implies",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000002",
+          "edgeId": "ce000000-0000-0000-0000-000000000001",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000003",
+          "edgeId": "ce000000-0000-0000-0000-000000000001",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#d68b2a"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000002",
+      "sourceId": "c5000000-0000-0000-0000-000000000002",
+      "targetId": "c5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000004",
+          "edgeId": "ce000000-0000-0000-0000-000000000002",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "implies",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000005",
+          "edgeId": "ce000000-0000-0000-0000-000000000002",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000006",
+          "edgeId": "ce000000-0000-0000-0000-000000000002",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#d68b2a"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000003",
+      "sourceId": "c5000000-0000-0000-0000-000000000003",
+      "targetId": "c5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000007",
+          "edgeId": "ce000000-0000-0000-0000-000000000003",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "implies",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000008",
+          "edgeId": "ce000000-0000-0000-0000-000000000003",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000009",
+          "edgeId": "ce000000-0000-0000-0000-000000000003",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#d68b2a"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000004",
+      "sourceId": "c5000000-0000-0000-0000-000000000004",
+      "targetId": "c5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000010",
+          "edgeId": "ce000000-0000-0000-0000-000000000004",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "implies",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000011",
+          "edgeId": "ce000000-0000-0000-0000-000000000004",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000012",
+          "edgeId": "ce000000-0000-0000-0000-000000000004",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#d68b2a"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000005",
+      "sourceId": "c5000000-0000-0000-0000-000000000005",
+      "targetId": "c5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000013",
+          "edgeId": "ce000000-0000-0000-0000-000000000005",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "implies",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000014",
+          "edgeId": "ce000000-0000-0000-0000-000000000005",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000015",
+          "edgeId": "ce000000-0000-0000-0000-000000000005",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#d68b2a"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000006",
+      "sourceId": "c5000000-0000-0000-0000-000000000001",
+      "targetId": "c5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000016",
+          "edgeId": "ce000000-0000-0000-0000-000000000006",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000017",
+          "edgeId": "ce000000-0000-0000-0000-000000000006",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000018",
+          "edgeId": "ce000000-0000-0000-0000-000000000006",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "ce000000-0000-0000-0000-000000000007",
+      "sourceId": "c5000000-0000-0000-0000-000000000007",
+      "targetId": "c5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "cf000000-0000-0000-0000-000000000019",
+          "edgeId": "ce000000-0000-0000-0000-000000000007",
+          "paramDefId": "c3000000-0000-0000-0000-000000000001",
+          "value": "cites",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000020",
+          "edgeId": "ce000000-0000-0000-0000-000000000007",
+          "paramDefId": "c3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "cf000000-0000-0000-0000-000000000021",
+          "edgeId": "ce000000-0000-0000-0000-000000000007",
+          "paramDefId": "c3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    }
+  ],
+  "regions": [
+    {
+      "id": "c7000000-0000-0000-0000-000000000001",
+      "title": "The Departure",
+      "x": 48.0,
+      "y": 96.0,
+      "width": 992.0,
+      "height": 480.0,
+      "color": "#5588bb",
+      "createdAt": "2026-05-25T00:00:00Z"
+    },
+    {
+      "id": "c7000000-0000-0000-0000-000000000002",
+      "title": "The Ordeal & Return",
+      "x": 1168.0,
+      "y": 96.0,
+      "width": 736.0,
+      "height": 800.0,
+      "color": "#c83030",
+      "createdAt": "2026-05-25T00:00:00Z"
+    }
+  ]
+}

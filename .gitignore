@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__/
+*.pyc
+
+# Local tooling / caches
+.wrangler/
+.claude/
+
+# Build outputs & signed installers (publish via GitHub Releases instead)
+releases/
+specs/website/download/
+*.exe
+*.msi
+
+# Secrets
+.env
+.env.*
+*.pfx
+esigner.env
+
+# Private docs (personal info, signing details, business analysis) — kept locally, not in the repo
+specs/logs/
+specs/specs/product/
+specs/specs/architecture/HANDOFF.md
+specs/website/LAUNCH_CHECKLIST.md
+NEXT_STEPS.md

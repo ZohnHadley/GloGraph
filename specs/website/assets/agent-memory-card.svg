@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 776" width="1380" height="776" role="img" aria-label="GloGraph canvas: an AI agent's memory of a system">
+  <defs>
+    <pattern id="g" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.5" fill="#222"/></pattern>
+    <marker id="ab" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="#388bfd"/></marker>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="#c83030"/></marker>
+    <marker id="ag" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="#3fb950"/></marker>
+    <style>.t{font-family:'Segoe UI',Tahoma,sans-serif;}</style>
+  </defs>
+
+  <rect width="1380" height="776" fill="#171717"/>
+  <rect width="1380" height="776" fill="url(#g)"/>
+
+  <!-- region: live system -->
+  <rect x="80" y="110" width="900" height="430" rx="3" fill="#388bfd14" stroke="#388bfd55" stroke-width="1.5"/>
+  <text x="100" y="146" class="t" font-size="20" font-weight="600" fill="#5fa8ef">Live system</text>
+
+  <!-- edges -->
+  <path d="M320 230 C430 230 430 300 520 300" fill="none" stroke="#388bfd" stroke-width="3" marker-end="url(#ab)"/>
+  <path d="M320 410 C430 410 430 332 520 332" fill="none" stroke="#388bfd" stroke-width="3" marker-end="url(#ab)"/>
+  <path d="M620 372 C620 430 620 430 620 470" fill="none" stroke="#388bfd" stroke-width="3" marker-end="url(#ab)"/>
+  <path d="M820 500 C870 500 880 500 920 500" fill="none" stroke="#c83030" stroke-width="3" marker-end="url(#ar)"/>
+  <path d="M980 650 C880 650 760 600 700 560" fill="none" stroke="#3fb950" stroke-width="3" marker-end="url(#ag)"/>
+  <text x="430" y="252" class="t" font-size="16" fill="#9a9a9a">depends on</text>
+  <text x="430" y="356" class="t" font-size="16" fill="#9a9a9a">depends on</text>
+  <text x="636" y="430" class="t" font-size="16" fill="#9a9a9a">depends on</text>
+  <text x="828" y="486" class="t" font-size="16" fill="#9a9a9a">caused</text>
+  <text x="800" y="612" class="t" font-size="16" fill="#9a9a9a">mitigates</text>
+
+  <!-- node card helper: rect + colour bar + title -->
+  <!-- Web App -->
+  <g transform="translate(120,202)"><rect width="200" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#388bfd"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">Web App</text></g>
+  <!-- Billing API -->
+  <g transform="translate(120,382)"><rect width="200" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#388bfd"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">Billing API</text></g>
+  <!-- Auth Service -->
+  <g transform="translate(520,288)"><rect width="200" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#388bfd"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">Auth Service</text></g>
+  <!-- User Database -->
+  <g transform="translate(520,470)"><rect width="200" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#3fb950"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">User Database</text></g>
+  <!-- Oct 3 outage (incident) -->
+  <g transform="translate(920,472)"><rect width="220" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#c83030"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">Oct 3 outage</text></g>
+  <!-- Add read replica (decision) -->
+  <g transform="translate(980,622)"><rect width="240" height="56" fill="#232323" stroke="#4a4a4a"/><rect width="6" height="56" fill="#7766aa"/><text x="22" y="34" class="t" font-size="20" font-weight="600" fill="#d6d6d6">Add a read replica</text></g>
+</svg>

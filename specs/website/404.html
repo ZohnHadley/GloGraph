@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GloGraph: Page not found</title>
+  <meta name="description" content="That page could not be found. Head back to the GloGraph home page." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#171717" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Load fonts without blocking first paint: preload as style, swap to stylesheet on load. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__brand" href="/">GLOGRAPH</a>
+    <nav class="nav__links">
+      <a href="/#features">Features</a>
+      <a href="/demo/">Demo</a>
+      <a href="/#plans">Plans</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="/#notify" class="btn btn--primary nav__cta" data-cta="nav-notify">Get early access</a>
+  </header>
+
+  <main>
+    <section class="section" style="text-align:center;">
+      <div class="kicker">404</div>
+      <h1 style="font-size:40px;margin-bottom:12px;">Page not found</h1>
+      <p class="section__sub" style="margin:0 auto 24px;">That page doesn't exist. The graph remembers everything else.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a class="btn btn--primary btn--lg" href="/">Back to home</a>
+        <a class="btn btn--lg" href="/demo/">Try the live demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">GLOGRAPH</div>
+    <div class="footer__meta">Local-first, scriptable causal &amp; systems mapping. © <span id="year"></span> GloGraph.</div>
+    <nav class="footer__links">
+      <a href="/#features">Features</a>
+      <a href="/#plans">Plans</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1128 @@
+{
+ "version": 8,
+ "exportedAt": "2026-06-07T00:00:00Z",
+ "settings": {
+  "presetName": "Software Architecture",
+  "paramDefs": [
+   {
+    "id": "b1000000-0000-0000-0000-000000000001",
+    "presetId": "b0000000-0000-0000-0000-000000000001",
+    "displayName": "Type",
+    "paramType": "select_color",
+    "defaultValue": null,
+    "drivesColor": true,
+    "showOnCardDefault": true,
+    "sortOrder": 0,
+    "options": [
+     {
+      "id": "b2000000-0000-0000-0000-000000000000",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "gateway",
+      "label": "Gateway",
+      "color": "#d68b2a",
+      "sortOrder": 0
+     },
+     {
+      "id": "b2000000-0000-0000-0000-000000000001",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "service",
+      "label": "Service",
+      "color": "#5588bb",
+      "sortOrder": 1
+     },
+     {
+      "id": "b2000000-0000-0000-0000-000000000002",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "datastore",
+      "label": "Datastore",
+      "color": "#3d9e5f",
+      "sortOrder": 2
+     },
+     {
+      "id": "b2000000-0000-0000-0000-000000000003",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "cache",
+      "label": "Cache",
+      "color": "#00b0c8",
+      "sortOrder": 3
+     },
+     {
+      "id": "b2000000-0000-0000-0000-000000000004",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "queue",
+      "label": "Queue",
+      "color": "#7766aa",
+      "sortOrder": 4
+     },
+     {
+      "id": "b2000000-0000-0000-0000-000000000005",
+      "paramDefId": "b1000000-0000-0000-0000-000000000001",
+      "valueSlug": "external",
+      "label": "External",
+      "color": "#888888",
+      "sortOrder": 5
+     }
+    ]
+   },
+   {
+    "id": "b1000000-0000-0000-0000-000000000002",
+    "presetId": "b0000000-0000-0000-0000-000000000001",
+    "displayName": "Owner",
+    "paramType": "text",
+    "defaultValue": null,
+    "drivesColor": false,
+    "showOnCardDefault": false,
+    "sortOrder": 1,
+    "options": []
+   }
+  ],
+  "edgeParamDefs": [
+   {
+    "id": "b3000000-0000-0000-0000-000000000001",
+    "presetId": "b0000000-0000-0000-0000-000000000001",
+    "displayName": "Relation",
+    "paramType": "select_color",
+    "defaultValue": null,
+    "drivesArrow": false,
+    "drivesStyle": false,
+    "drivesColor": true,
+    "drivesWidth": false,
+    "sortOrder": 0,
+    "options": [
+     {
+      "id": "b4000000-0000-0000-0000-000000000000",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "calls",
+      "label": "Calls",
+      "color": "#d68b2a",
+      "sortOrder": 0
+     },
+     {
+      "id": "b4000000-0000-0000-0000-000000000001",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "depends-on",
+      "label": "Depends on",
+      "color": "#5588bb",
+      "sortOrder": 1
+     },
+     {
+      "id": "b4000000-0000-0000-0000-000000000002",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "reads",
+      "label": "Reads",
+      "color": "#3d9e5f",
+      "sortOrder": 2
+     },
+     {
+      "id": "b4000000-0000-0000-0000-000000000003",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "writes",
+      "label": "Writes",
+      "color": "#c83030",
+      "sortOrder": 3
+     },
+     {
+      "id": "b4000000-0000-0000-0000-000000000004",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "publishes-to",
+      "label": "Publishes to",
+      "color": "#7766aa",
+      "sortOrder": 4
+     },
+     {
+      "id": "b4000000-0000-0000-0000-000000000005",
+      "paramDefId": "b3000000-0000-0000-0000-000000000001",
+      "valueSlug": "subscribes-to",
+      "label": "Subscribes to",
+      "color": "#00b0c8",
+      "sortOrder": 5
+     }
+    ]
+   },
+   {
+    "id": "b3000000-0000-0000-0000-000000000002",
+    "presetId": "b0000000-0000-0000-0000-000000000001",
+    "displayName": "Directed",
+    "paramType": "boolean",
+    "defaultValue": "true",
+    "drivesArrow": true,
+    "drivesStyle": false,
+    "drivesColor": false,
+    "drivesWidth": false,
+    "sortOrder": 1,
+    "options": []
+   },
+   {
+    "id": "b3000000-0000-0000-0000-000000000003",
+    "presetId": "b0000000-0000-0000-0000-000000000001",
+    "displayName": "Notes",
+    "paramType": "text",
+    "defaultValue": null,
+    "drivesArrow": false,
+    "drivesStyle": false,
+    "drivesColor": false,
+    "drivesWidth": false,
+    "sortOrder": 2,
+    "options": []
+   }
+  ]
+ },
+ "nodes": [
+  {
+   "id": "b5000000-0000-0000-0000-000000000001",
+   "title": "Web App",
+   "description": "Customer-facing React app. Talks to the platform only through the API Gateway.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 0.0,
+   "y": 80.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000001",
+     "nodeId": "b5000000-0000-0000-0000-000000000001",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000101",
+     "nodeId": "b5000000-0000-0000-0000-000000000001",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Frontend",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000002",
+   "title": "Mobile App",
+   "description": "iOS/Android client. Same public API surface as the web app.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 0.0,
+   "y": 240.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000002",
+     "nodeId": "b5000000-0000-0000-0000-000000000002",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000102",
+     "nodeId": "b5000000-0000-0000-0000-000000000002",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Frontend",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000003",
+   "title": "API Gateway",
+   "description": "Edge router + auth check. Fans requests out to the core services.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 300.0,
+   "y": 160.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000003",
+     "nodeId": "b5000000-0000-0000-0000-000000000003",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "gateway",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000103",
+     "nodeId": "b5000000-0000-0000-0000-000000000003",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Platform",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000004",
+   "title": "Auth Service",
+   "description": "Issues and validates session tokens. Most services depend on it.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 620.0,
+   "y": -40.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000004",
+     "nodeId": "b5000000-0000-0000-0000-000000000004",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000104",
+     "nodeId": "b5000000-0000-0000-0000-000000000004",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Identity",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000005",
+   "title": "Payments Service",
+   "description": "Owns /charge and /refund. Calls Stripe and writes the payments ledger.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 620.0,
+   "y": 140.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000005",
+     "nodeId": "b5000000-0000-0000-0000-000000000005",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000105",
+     "nodeId": "b5000000-0000-0000-0000-000000000005",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Payments",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000006",
+   "title": "Orders Service",
+   "description": "Owns the order lifecycle; writes orders and emits order events.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 620.0,
+   "y": 320.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000006",
+     "nodeId": "b5000000-0000-0000-0000-000000000006",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000106",
+     "nodeId": "b5000000-0000-0000-0000-000000000006",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Commerce",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000007",
+   "title": "Notifications Service",
+   "description": "Sends email/SMS off the event bus (order confirmations, receipts).",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 620.0,
+   "y": 500.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000007",
+     "nodeId": "b5000000-0000-0000-0000-000000000007",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "service",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000107",
+     "nodeId": "b5000000-0000-0000-0000-000000000007",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Growth",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000008",
+   "title": "Redis Cache",
+   "description": "Shared session + hot-path cache. Read by Auth and Orders.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 940.0,
+   "y": -40.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000008",
+     "nodeId": "b5000000-0000-0000-0000-000000000008",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "cache",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000108",
+     "nodeId": "b5000000-0000-0000-0000-000000000008",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Platform",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000009",
+   "title": "Payments DB",
+   "description": "Postgres. Source of truth for charges, refunds, and payout state.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 940.0,
+   "y": 140.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000009",
+     "nodeId": "b5000000-0000-0000-0000-000000000009",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "datastore",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000109",
+     "nodeId": "b5000000-0000-0000-0000-000000000009",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Payments",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000010",
+   "title": "Orders DB",
+   "description": "Postgres. Orders, line items, and fulfilment status.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 940.0,
+   "y": 320.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000010",
+     "nodeId": "b5000000-0000-0000-0000-000000000010",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "datastore",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000110",
+     "nodeId": "b5000000-0000-0000-0000-000000000010",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Commerce",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000011",
+   "title": "Event Bus",
+   "description": "Kafka. Order/payment events; decouples producers from consumers.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 940.0,
+   "y": 500.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000011",
+     "nodeId": "b5000000-0000-0000-0000-000000000011",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "queue",
+     "isEnabled": true,
+     "showOnCard": true
+    },
+    {
+     "id": "b6000000-0000-0000-0000-000000000111",
+     "nodeId": "b5000000-0000-0000-0000-000000000011",
+     "paramDefId": "b1000000-0000-0000-0000-000000000002",
+     "value": "Platform",
+     "isEnabled": true,
+     "showOnCard": false
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000012",
+   "title": "Stripe",
+   "description": "Third-party card processor. Called by Payments to capture funds.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 1260.0,
+   "y": 140.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000012",
+     "nodeId": "b5000000-0000-0000-0000-000000000012",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "external",
+     "isEnabled": true,
+     "showOnCard": true
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-000000000013",
+   "title": "SendGrid",
+   "description": "Third-party email provider used by Notifications.",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 1260.0,
+   "y": 500.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [
+    {
+     "id": "b6000000-0000-0000-0000-000000000013",
+     "nodeId": "b5000000-0000-0000-0000-000000000013",
+     "paramDefId": "b1000000-0000-0000-0000-000000000001",
+     "value": "external",
+     "isEnabled": true,
+     "showOnCard": true
+    }
+   ],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "standard",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": "b5000000-0000-0000-0000-0000000000ff",
+   "title": "",
+   "description": "Software architecture map \u2014 a payments platform.\n\nEvery box is a typed node and every arrow a classified dependency, so this is queryable data, not just a picture. Right-click a node and \"Trace upstream\" to see its blast radius (e.g. what breaks if Auth Service or Redis goes down).",
+   "eventDate": null,
+   "dateAdded": "2026-06-07T00:00:00Z",
+   "x": 0.0,
+   "y": 440.0,
+   "color": null,
+   "confidence": null,
+   "impactMagnitude": null,
+   "tags": [],
+   "links": [],
+   "media": [],
+   "paramValues": [],
+   "isPinned": false,
+   "isExpandPinned": false,
+   "zOrder": 0,
+   "kind": "note",
+   "width": 260.0,
+   "height": 150.0
+  }
+ ],
+ "edges": [
+  {
+   "id": "be000000-0000-0000-0000-000000000001",
+   "sourceId": "b5000000-0000-0000-0000-000000000001",
+   "targetId": "b5000000-0000-0000-0000-000000000003",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000101",
+     "edgeId": "be000000-0000-0000-0000-000000000001",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000201",
+     "edgeId": "be000000-0000-0000-0000-000000000001",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000002",
+   "sourceId": "b5000000-0000-0000-0000-000000000002",
+   "targetId": "b5000000-0000-0000-0000-000000000003",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000102",
+     "edgeId": "be000000-0000-0000-0000-000000000002",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000202",
+     "edgeId": "be000000-0000-0000-0000-000000000002",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000003",
+   "sourceId": "b5000000-0000-0000-0000-000000000003",
+   "targetId": "b5000000-0000-0000-0000-000000000004",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000103",
+     "edgeId": "be000000-0000-0000-0000-000000000003",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000203",
+     "edgeId": "be000000-0000-0000-0000-000000000003",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000004",
+   "sourceId": "b5000000-0000-0000-0000-000000000003",
+   "targetId": "b5000000-0000-0000-0000-000000000005",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000104",
+     "edgeId": "be000000-0000-0000-0000-000000000004",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000204",
+     "edgeId": "be000000-0000-0000-0000-000000000004",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000005",
+   "sourceId": "b5000000-0000-0000-0000-000000000003",
+   "targetId": "b5000000-0000-0000-0000-000000000006",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000105",
+     "edgeId": "be000000-0000-0000-0000-000000000005",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000205",
+     "edgeId": "be000000-0000-0000-0000-000000000005",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000006",
+   "sourceId": "b5000000-0000-0000-0000-000000000005",
+   "targetId": "b5000000-0000-0000-0000-000000000004",
+   "sourceHandle": "top",
+   "targetHandle": "bottom",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000106",
+     "edgeId": "be000000-0000-0000-0000-000000000006",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "depends-on",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000206",
+     "edgeId": "be000000-0000-0000-0000-000000000006",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#5588bb"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000007",
+   "sourceId": "b5000000-0000-0000-0000-000000000006",
+   "targetId": "b5000000-0000-0000-0000-000000000004",
+   "sourceHandle": "top",
+   "targetHandle": "bottom",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000107",
+     "edgeId": "be000000-0000-0000-0000-000000000007",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "depends-on",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000207",
+     "edgeId": "be000000-0000-0000-0000-000000000007",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#5588bb"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000008",
+   "sourceId": "b5000000-0000-0000-0000-000000000005",
+   "targetId": "b5000000-0000-0000-0000-000000000009",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000108",
+     "edgeId": "be000000-0000-0000-0000-000000000008",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "writes",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000208",
+     "edgeId": "be000000-0000-0000-0000-000000000008",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#c83030"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000009",
+   "sourceId": "b5000000-0000-0000-0000-000000000006",
+   "targetId": "b5000000-0000-0000-0000-000000000010",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000109",
+     "edgeId": "be000000-0000-0000-0000-000000000009",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "writes",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000209",
+     "edgeId": "be000000-0000-0000-0000-000000000009",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#c83030"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000010",
+   "sourceId": "b5000000-0000-0000-0000-000000000004",
+   "targetId": "b5000000-0000-0000-0000-000000000008",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000110",
+     "edgeId": "be000000-0000-0000-0000-000000000010",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "reads",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000210",
+     "edgeId": "be000000-0000-0000-0000-000000000010",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#3d9e5f"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000011",
+   "sourceId": "b5000000-0000-0000-0000-000000000006",
+   "targetId": "b5000000-0000-0000-0000-000000000008",
+   "sourceHandle": "top",
+   "targetHandle": "bottom",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000111",
+     "edgeId": "be000000-0000-0000-0000-000000000011",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "reads",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000211",
+     "edgeId": "be000000-0000-0000-0000-000000000011",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#3d9e5f"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000012",
+   "sourceId": "b5000000-0000-0000-0000-000000000005",
+   "targetId": "b5000000-0000-0000-0000-000000000012",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000112",
+     "edgeId": "be000000-0000-0000-0000-000000000012",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000212",
+     "edgeId": "be000000-0000-0000-0000-000000000012",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000013",
+   "sourceId": "b5000000-0000-0000-0000-000000000005",
+   "targetId": "b5000000-0000-0000-0000-000000000011",
+   "sourceHandle": "bottom",
+   "targetHandle": "top",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000113",
+     "edgeId": "be000000-0000-0000-0000-000000000013",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "publishes-to",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000213",
+     "edgeId": "be000000-0000-0000-0000-000000000013",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#7766aa"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000014",
+   "sourceId": "b5000000-0000-0000-0000-000000000006",
+   "targetId": "b5000000-0000-0000-0000-000000000011",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000114",
+     "edgeId": "be000000-0000-0000-0000-000000000014",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "publishes-to",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000214",
+     "edgeId": "be000000-0000-0000-0000-000000000014",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#7766aa"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000015",
+   "sourceId": "b5000000-0000-0000-0000-000000000007",
+   "targetId": "b5000000-0000-0000-0000-000000000011",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000115",
+     "edgeId": "be000000-0000-0000-0000-000000000015",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "subscribes-to",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000215",
+     "edgeId": "be000000-0000-0000-0000-000000000015",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#00b0c8"
+  },
+  {
+   "id": "be000000-0000-0000-0000-000000000016",
+   "sourceId": "b5000000-0000-0000-0000-000000000007",
+   "targetId": "b5000000-0000-0000-0000-000000000013",
+   "sourceHandle": "right",
+   "targetHandle": "left",
+   "waypoints": null,
+   "paramValues": [
+    {
+     "id": "bf000000-0000-0000-0000-000000000116",
+     "edgeId": "be000000-0000-0000-0000-000000000016",
+     "paramDefId": "b3000000-0000-0000-0000-000000000001",
+     "value": "calls",
+     "isEnabled": true
+    },
+    {
+     "id": "bf000000-0000-0000-0000-000000000216",
+     "edgeId": "be000000-0000-0000-0000-000000000016",
+     "paramDefId": "b3000000-0000-0000-0000-000000000002",
+     "value": "true",
+     "isEnabled": true
+    }
+   ],
+   "color": "#d68b2a"
+  }
+ ],
+ "regions": [
+  {
+   "id": "b7000000-0000-0000-0000-000000000001",
+   "title": "Core services",
+   "x": 580.0,
+   "y": -100.0,
+   "width": 300.0,
+   "height": 720.0,
+   "color": "#5588bb",
+   "zOrder": 0,
+   "isLocked": false,
+   "isMinimized": false,
+   "createdAt": "2026-06-07T00:00:00Z"
+  },
+  {
+   "id": "b7000000-0000-0000-0000-000000000002",
+   "title": "Data & messaging",
+   "x": 900.0,
+   "y": -100.0,
+   "width": 300.0,
+   "height": 720.0,
+   "color": "#3d9e5f",
+   "zOrder": 0,
+   "isLocked": false,
+   "isMinimized": false,
+   "createdAt": "2026-06-07T00:00:00Z"
+  },
+  {
+   "id": "b7000000-0000-0000-0000-000000000003",
+   "title": "Third-party",
+   "x": 1220.0,
+   "y": 100.0,
+   "width": 260.0,
+   "height": 520.0,
+   "color": "#888888",
+   "zOrder": 0,
+   "isLocked": false,
+   "isMinimized": false,
+   "createdAt": "2026-06-07T00:00:00Z"
+  }
+ ]
+}

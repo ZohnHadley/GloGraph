@@ -1,0 +1,1700 @@
+{
+  "version": 8,
+  "exportedAt": "2026-06-04T00:00:00Z",
+  "settings": {
+    "presetName": "Game Project",
+    "paramDefs": [
+      {
+        "id": "b1000000-0000-0000-0000-000000000001",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "b2000000-0000-0000-0000-000000000001",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "feature",
+            "label": "Feature",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000002",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "system",
+            "label": "System",
+            "color": "#7766aa",
+            "sortOrder": 1
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000003",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "art",
+            "label": "Art",
+            "color": "#d68b2a",
+            "sortOrder": 2
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000004",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "audio",
+            "label": "Audio",
+            "color": "#3d9e5f",
+            "sortOrder": 3
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000005",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "task",
+            "label": "Task",
+            "color": "#888888",
+            "sortOrder": 4
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000006",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "milestone",
+            "label": "Milestone",
+            "color": "#c83030",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "b1000000-0000-0000-0000-000000000002",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Effort (days)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "b1000000-0000-0000-0000-000000000003",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Status",
+        "paramType": "select",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": true,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "b2500000-0000-0000-0000-000000000001",
+            "paramDefId": "b1000000-0000-0000-0000-000000000003",
+            "valueSlug": "todo",
+            "label": "To do",
+            "color": null,
+            "sortOrder": 0
+          },
+          {
+            "id": "b2500000-0000-0000-0000-000000000002",
+            "paramDefId": "b1000000-0000-0000-0000-000000000003",
+            "valueSlug": "doing",
+            "label": "In progress",
+            "color": null,
+            "sortOrder": 1
+          },
+          {
+            "id": "b2500000-0000-0000-0000-000000000003",
+            "paramDefId": "b1000000-0000-0000-0000-000000000003",
+            "valueSlug": "done",
+            "label": "Done",
+            "color": null,
+            "sortOrder": 2
+          }
+        ]
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "b3000000-0000-0000-0000-000000000001",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Relation",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "b4000000-0000-0000-0000-000000000001",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "depends-on",
+            "label": "Depends on",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000002",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "blocks",
+            "label": "Blocks",
+            "color": "#c83030",
+            "sortOrder": 1
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000003",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "part-of",
+            "label": "Part of",
+            "color": "#7766aa",
+            "sortOrder": 2
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000004",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "related",
+            "label": "Related",
+            "color": "#888888",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000002",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000003",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Weight",
+        "paramType": "number",
+        "defaultValue": "2",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 2,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "b5000000-0000-0000-0000-000000000001",
+      "title": "Player controller",
+      "description": "8-direction run + variable jump height. Momentum-based, the core feel of the game.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 272.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000011",
+          "nodeId": "b5000000-0000-0000-0000-000000000001",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "system",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000012",
+          "nodeId": "b5000000-0000-0000-0000-000000000001",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "5",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000013",
+          "nodeId": "b5000000-0000-0000-0000-000000000001",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000002",
+      "title": "Physics & collision",
+      "description": "Swept-AABB collision against the tilemap. Owns gravity, one-way platforms, slopes.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 528.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000021",
+          "nodeId": "b5000000-0000-0000-0000-000000000002",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "system",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000022",
+          "nodeId": "b5000000-0000-0000-0000-000000000002",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "4",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000023",
+          "nodeId": "b5000000-0000-0000-0000-000000000002",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000003",
+      "title": "Tilemap engine",
+      "description": "Chunked tilemap renderer + collision baking. Loads levels authored in the editor.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 576.0,
+      "y": 272.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000031",
+          "nodeId": "b5000000-0000-0000-0000-000000000003",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "system",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000032",
+          "nodeId": "b5000000-0000-0000-0000-000000000003",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "3",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000033",
+          "nodeId": "b5000000-0000-0000-0000-000000000003",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000004",
+      "title": "Save system",
+      "description": "Three save slots, checkpoint-based. Serialised to a local file.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 576.0,
+      "y": 528.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000041",
+          "nodeId": "b5000000-0000-0000-0000-000000000004",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "feature",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000042",
+          "nodeId": "b5000000-0000-0000-0000-000000000004",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000043",
+          "nodeId": "b5000000-0000-0000-0000-000000000004",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000005",
+      "title": "Enemy AI",
+      "description": "State-machine patrols + chase. Reused by every enemy type, including the boss.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 320.0,
+      "y": 752.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000051",
+          "nodeId": "b5000000-0000-0000-0000-000000000005",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "feature",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000052",
+          "nodeId": "b5000000-0000-0000-0000-000000000005",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "4",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000053",
+          "nodeId": "b5000000-0000-0000-0000-000000000005",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000006",
+      "title": "Level 1: Caverns",
+      "description": "The first playable level. Tutorialises movement, then introduces hazards and the boss gate.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1312.0,
+      "y": 272.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000061",
+          "nodeId": "b5000000-0000-0000-0000-000000000006",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "feature",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000062",
+          "nodeId": "b5000000-0000-0000-0000-000000000006",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "6",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000063",
+          "nodeId": "b5000000-0000-0000-0000-000000000006",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000007",
+      "title": "Main menu",
+      "description": "Title screen, save-slot select, options. First thing a player sees.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1696.0,
+      "y": 272.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000071",
+          "nodeId": "b5000000-0000-0000-0000-000000000007",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "feature",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000072",
+          "nodeId": "b5000000-0000-0000-0000-000000000007",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000073",
+          "nodeId": "b5000000-0000-0000-0000-000000000007",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000008",
+      "title": "Boss: The Warden",
+      "description": "Level 1 boss. Three phases. Gates progression to the vertical slice.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1504.0,
+      "y": 544.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000081",
+          "nodeId": "b5000000-0000-0000-0000-000000000008",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "feature",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000082",
+          "nodeId": "b5000000-0000-0000-0000-000000000008",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "5",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000083",
+          "nodeId": "b5000000-0000-0000-0000-000000000008",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000009",
+      "title": "Character sprites",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 32.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000009",
+          "nodeId": "b5000000-0000-0000-0000-000000000009",
+          "label": "Character sprites",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__SampleA.png",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000091",
+          "nodeId": "b5000000-0000-0000-0000-000000000009",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000092",
+          "nodeId": "b5000000-0000-0000-0000-000000000009",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000010",
+      "title": "Tileset & mockup",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000010",
+          "nodeId": "b5000000-0000-0000-0000-000000000010",
+          "label": "Tileset & mockup",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__Preview.png",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000101",
+          "nodeId": "b5000000-0000-0000-0000-000000000010",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000102",
+          "nodeId": "b5000000-0000-0000-0000-000000000010",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000011",
+      "title": "Enemy & item concepts",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 928.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000011",
+          "nodeId": "b5000000-0000-0000-0000-000000000011",
+          "label": "Enemy & item concepts",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\pixel-platformer__SampleB.png",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000111",
+          "nodeId": "b5000000-0000-0000-0000-000000000011",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000112",
+          "nodeId": "b5000000-0000-0000-0000-000000000011",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000012",
+      "title": "Main theme (loop)",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 32.0,
+      "y": 1440.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000012",
+          "nodeId": "b5000000-0000-0000-0000-000000000012",
+          "label": "Main theme (loop)",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music-jingles__jingles_NES00.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000121",
+          "nodeId": "b5000000-0000-0000-0000-000000000012",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "audio",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000122",
+          "nodeId": "b5000000-0000-0000-0000-000000000012",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000013",
+      "title": "Jump SFX",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1440.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000013",
+          "nodeId": "b5000000-0000-0000-0000-000000000013",
+          "label": "Jump SFX",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\interface-sounds__confirmation_002.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000131",
+          "nodeId": "b5000000-0000-0000-0000-000000000013",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "audio",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000132",
+          "nodeId": "b5000000-0000-0000-0000-000000000013",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000014",
+      "title": "Pickup SFX",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 896.0,
+      "y": 1440.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000014",
+          "nodeId": "b5000000-0000-0000-0000-000000000014",
+          "label": "Pickup SFX",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\interface-sounds__confirmation_004.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000141",
+          "nodeId": "b5000000-0000-0000-0000-000000000014",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "audio",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000142",
+          "nodeId": "b5000000-0000-0000-0000-000000000014",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "done",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000015",
+      "title": "Vertical Slice",
+      "description": "The demo build: one polished level start to boss, with menu, art, and audio in place.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1792.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000151",
+          "nodeId": "b5000000-0000-0000-0000-000000000015",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "milestone",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000152",
+          "nodeId": "b5000000-0000-0000-0000-000000000015",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000016",
+      "title": "Polish & juice",
+      "description": "Screenshake, hit-stop, particles, transitions. The pass that makes it feel good.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1472.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000161",
+          "nodeId": "b5000000-0000-0000-0000-000000000016",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000162",
+          "nodeId": "b5000000-0000-0000-0000-000000000016",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "3",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000163",
+          "nodeId": "b5000000-0000-0000-0000-000000000016",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "todo",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000017",
+      "title": "Gameplay preview",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1472.0,
+      "y": 1280.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "b9000000-0000-0000-0000-000000000017",
+          "nodeId": "b5000000-0000-0000-0000-000000000017",
+          "label": "Gameplay preview",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\gameplay-preview.mp4",
+          "srcType": "file",
+          "mediaType": "video",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000171",
+          "nodeId": "b5000000-0000-0000-0000-000000000017",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "art",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000172",
+          "nodeId": "b5000000-0000-0000-0000-000000000017",
+          "paramDefId": "b1000000-0000-0000-0000-000000000003",
+          "value": "doing",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "video",
+      "width": 340,
+      "height": 210
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000018",
+      "title": "",
+      "description": "Design pillars\n\n1. Momentum is king \u2014 never take control away from the player.\n2. Death is cheap, checkpoints are close.\n3. Every screen teaches one idea.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1888.0,
+      "y": 1312.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 300,
+      "height": 180
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000019",
+      "title": "",
+      "description": "About this demo. A game project as a typed graph: systems, features, tasks, a milestone, plus image / video / audio / note items and regions. Right-click any node and Trace upstream to see what a slipping task puts at risk. Built for recording GloGraph videos.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1888.0,
+      "y": 192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 320,
+      "height": 190
+    }
+  ],
+  "edges": [
+    {
+      "id": "be000000-0000-0000-0000-000000000001",
+      "sourceId": "b5000000-0000-0000-0000-000000000001",
+      "targetId": "b5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000011",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000012",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000013",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000002",
+      "sourceId": "b5000000-0000-0000-0000-000000000005",
+      "targetId": "b5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "left",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000021",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000022",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000023",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000003",
+      "sourceId": "b5000000-0000-0000-0000-000000000008",
+      "targetId": "b5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000031",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000032",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000033",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000004",
+      "sourceId": "b5000000-0000-0000-0000-000000000006",
+      "targetId": "b5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000041",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000042",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000043",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000005",
+      "sourceId": "b5000000-0000-0000-0000-000000000006",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000051",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000052",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000053",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000006",
+      "sourceId": "b5000000-0000-0000-0000-000000000004",
+      "targetId": "b5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000061",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000062",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000063",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000007",
+      "sourceId": "b5000000-0000-0000-0000-000000000009",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000071",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000072",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000073",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000008",
+      "sourceId": "b5000000-0000-0000-0000-000000000010",
+      "targetId": "b5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000081",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000082",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000083",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000009",
+      "sourceId": "b5000000-0000-0000-0000-000000000011",
+      "targetId": "b5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000091",
+          "edgeId": "be000000-0000-0000-0000-000000000009",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000092",
+          "edgeId": "be000000-0000-0000-0000-000000000009",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000093",
+          "edgeId": "be000000-0000-0000-0000-000000000009",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000010",
+      "sourceId": "b5000000-0000-0000-0000-000000000012",
+      "targetId": "b5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000101",
+          "edgeId": "be000000-0000-0000-0000-000000000010",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000102",
+          "edgeId": "be000000-0000-0000-0000-000000000010",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000103",
+          "edgeId": "be000000-0000-0000-0000-000000000010",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000011",
+      "sourceId": "b5000000-0000-0000-0000-000000000013",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000111",
+          "edgeId": "be000000-0000-0000-0000-000000000011",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000112",
+          "edgeId": "be000000-0000-0000-0000-000000000011",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000113",
+          "edgeId": "be000000-0000-0000-0000-000000000011",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000012",
+      "sourceId": "b5000000-0000-0000-0000-000000000014",
+      "targetId": "b5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000121",
+          "edgeId": "be000000-0000-0000-0000-000000000012",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000122",
+          "edgeId": "be000000-0000-0000-0000-000000000012",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000123",
+          "edgeId": "be000000-0000-0000-0000-000000000012",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000013",
+      "sourceId": "b5000000-0000-0000-0000-000000000015",
+      "targetId": "b5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000131",
+          "edgeId": "be000000-0000-0000-0000-000000000013",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000132",
+          "edgeId": "be000000-0000-0000-0000-000000000013",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000133",
+          "edgeId": "be000000-0000-0000-0000-000000000013",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000014",
+      "sourceId": "b5000000-0000-0000-0000-000000000015",
+      "targetId": "b5000000-0000-0000-0000-000000000008",
+      "sourceHandle": "left",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000141",
+          "edgeId": "be000000-0000-0000-0000-000000000014",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000142",
+          "edgeId": "be000000-0000-0000-0000-000000000014",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000143",
+          "edgeId": "be000000-0000-0000-0000-000000000014",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000015",
+      "sourceId": "b5000000-0000-0000-0000-000000000015",
+      "targetId": "b5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000151",
+          "edgeId": "be000000-0000-0000-0000-000000000015",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000152",
+          "edgeId": "be000000-0000-0000-0000-000000000015",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000153",
+          "edgeId": "be000000-0000-0000-0000-000000000015",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000016",
+      "sourceId": "b5000000-0000-0000-0000-000000000016",
+      "targetId": "b5000000-0000-0000-0000-000000000015",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000161",
+          "edgeId": "be000000-0000-0000-0000-000000000016",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "blocks",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000162",
+          "edgeId": "be000000-0000-0000-0000-000000000016",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000163",
+          "edgeId": "be000000-0000-0000-0000-000000000016",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#c83030"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000017",
+      "sourceId": "b5000000-0000-0000-0000-000000000008",
+      "targetId": "b5000000-0000-0000-0000-000000000015",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000171",
+          "edgeId": "be000000-0000-0000-0000-000000000017",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "blocks",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000172",
+          "edgeId": "be000000-0000-0000-0000-000000000017",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000173",
+          "edgeId": "be000000-0000-0000-0000-000000000017",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#c83030"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000018",
+      "sourceId": "b5000000-0000-0000-0000-000000000017",
+      "targetId": "b5000000-0000-0000-0000-000000000015",
+      "sourceHandle": "right",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000181",
+          "edgeId": "be000000-0000-0000-0000-000000000018",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000182",
+          "edgeId": "be000000-0000-0000-0000-000000000018",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000183",
+          "edgeId": "be000000-0000-0000-0000-000000000018",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000019",
+      "sourceId": "b5000000-0000-0000-0000-000000000018",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000191",
+          "edgeId": "be000000-0000-0000-0000-000000000019",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000192",
+          "edgeId": "be000000-0000-0000-0000-000000000019",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000193",
+          "edgeId": "be000000-0000-0000-0000-000000000019",
+          "paramDefId": "b3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    }
+  ],
+  "regions": [
+    {
+      "id": "b7000000-0000-0000-0000-000000000001",
+      "title": "Core systems",
+      "x": -64.0,
+      "y": 176.0,
+      "width": 1120.0,
+      "height": 688.0,
+      "color": "#7766aa",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "b7000000-0000-0000-0000-000000000002",
+      "title": "Content \u2014 Level 1",
+      "x": 1216.0,
+      "y": 176.0,
+      "width": 768.0,
+      "height": 576.0,
+      "color": "#5588bb",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "b7000000-0000-0000-0000-000000000003",
+      "title": "Art & Audio",
+      "x": -64.0,
+      "y": 928.0,
+      "width": 1408.0,
+      "height": 768.0,
+      "color": "#d68b2a",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "b7000000-0000-0000-0000-000000000004",
+      "title": "Milestone: Vertical Slice",
+      "x": 1408.0,
+      "y": 928.0,
+      "width": 992.0,
+      "height": 768.0,
+      "color": "#c83030",
+      "createdAt": "2026-06-04T00:00:00Z"
+    }
+  ]
+}

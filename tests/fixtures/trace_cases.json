@@ -1,0 +1,80 @@
+[
+  {
+    "name": "downstream linear + branch, ignores unrelated component",
+    "edges": [
+      { "id": "ab", "sourceId": "A", "targetId": "B" },
+      { "id": "bc", "sourceId": "B", "targetId": "C" },
+      { "id": "bd", "sourceId": "B", "targetId": "D" },
+      { "id": "xy", "sourceId": "X", "targetId": "Y" }
+    ],
+    "seed": "A",
+    "direction": "downstream",
+    "expect": {
+      "nodes": [
+        { "id": "A", "hop": 0 },
+        { "id": "B", "hop": 1 },
+        { "id": "C", "hop": 2 },
+        { "id": "D", "hop": 2 }
+      ],
+      "edgeIds": ["ab", "bc", "bd"],
+      "reachedCount": 3,
+      "maxHop": 2
+    }
+  },
+  {
+    "name": "upstream walks against arrows",
+    "edges": [
+      { "id": "ab", "sourceId": "A", "targetId": "B" },
+      { "id": "bc", "sourceId": "B", "targetId": "C" },
+      { "id": "bd", "sourceId": "B", "targetId": "D" },
+      { "id": "xy", "sourceId": "X", "targetId": "Y" }
+    ],
+    "seed": "C",
+    "direction": "upstream",
+    "expect": {
+      "nodes": [
+        { "id": "C", "hop": 0 },
+        { "id": "B", "hop": 1 },
+        { "id": "A", "hop": 2 }
+      ],
+      "edgeIds": ["ab", "bc"],
+      "reachedCount": 2,
+      "maxHop": 2
+    }
+  },
+  {
+    "name": "isolated seed reaches nothing",
+    "edges": [
+      { "id": "ab", "sourceId": "A", "targetId": "B" },
+      { "id": "bc", "sourceId": "B", "targetId": "C" }
+    ],
+    "seed": "C",
+    "direction": "downstream",
+    "expect": {
+      "nodes": [{ "id": "C", "hop": 0 }],
+      "edgeIds": [],
+      "reachedCount": 0,
+      "maxHop": 0
+    }
+  },
+  {
+    "name": "cycle terminates and includes the back-edge",
+    "edges": [
+      { "id": "ab", "sourceId": "A", "targetId": "B" },
+      { "id": "bc", "sourceId": "B", "targetId": "C" },
+      { "id": "ca", "sourceId": "C", "targetId": "A" }
+    ],
+    "seed": "A",
+    "direction": "downstream",
+    "expect": {
+      "nodes": [
+        { "id": "A", "hop": 0 },
+        { "id": "B", "hop": 1 },
+        { "id": "C", "hop": 2 }
+      ],
+      "edgeIds": ["ab", "bc", "ca"],
+      "reachedCount": 2,
+      "maxHop": 2
+    }
+  }
+]

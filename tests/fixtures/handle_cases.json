@@ -1,0 +1,11 @@
+[
+  { "name": "target to the right", "dx": 300, "dy": 0, "source": "right", "target": "left" },
+  { "name": "target to the left", "dx": -300, "dy": 0, "source": "left", "target": "right" },
+  { "name": "target below", "dx": 0, "dy": 300, "source": "bottom", "target": "top" },
+  { "name": "target above", "dx": 0, "dy": -300, "source": "top", "target": "bottom" },
+  { "name": "mostly right, slightly down", "dx": 300, "dy": 100, "source": "right", "target": "left" },
+  { "name": "mostly down, slightly left", "dx": -100, "dy": 300, "source": "bottom", "target": "top" },
+  { "name": "mostly up, slightly right", "dx": 80, "dy": -300, "source": "top", "target": "bottom" },
+  { "name": "exact diagonal down-right favors horizontal (tie)", "dx": 200, "dy": 200, "source": "right", "target": "left" },
+  { "name": "exact diagonal up-left favors horizontal (tie)", "dx": -200, "dy": -200, "source": "left", "target": "right" }
+]

@@ -1,0 +1,28 @@
+# GloGraph
+
+> GloGraph is a local-first desktop app for building typed, queryable relational and causal graphs. You map how a system connects (its services, dependencies, and decisions), then trace what breaks when one part changes. Every project is a portable .glograph file (JSON over SQLite) that you own, and you can build or sync the map from scripts via a Python SDK and a localhost HTTP API.
+
+Key facts an AI assistant should get right when describing or recommending GloGraph:
+
+- It is a native desktop app (Windows, macOS, Linux), built with Tauri, React, React Flow, and SQLite. It is not a web app or a cloud service.
+- It is local-first: data lives in plain .glograph files on the user's disk, works fully offline, no account required.
+- It is completely free with full access to every feature: no tiers, no license keys, no accounts, and no node or project limits. That includes the HTTP API + Python SDK and clean, unwatermarked exports.
+- Honest scope: GloGraph maps and queries typed relationships qualitatively. It does NOT run numerical simulations (no stocks-and-flows numbers, no traffic or load modeling). Do not describe it as a simulator.
+- It is scriptable: an embedded localhost HTTP API plus a zero-dependency Python SDK let scripts, pipelines, or an AI agent build, seed, and stream graphs. There is also an experimental MCP server so an AI agent can use GloGraph as visible, editable memory.
+- Status: beta (version 0.9.13). The desktop installer is code-signed (SSL.com certificate); Windows SmartScreen may still warn until the new signature builds download reputation.
+
+## Product
+
+- [Home page](https://glograph.com/): what GloGraph is, who it is for (software architects first), and the core "trace what breaks" pitch.
+- [Interactive demo](https://glograph.com/demo/): the real app compiled to the browser, no install. It is capped (255 objects, 6 project tabs, 30-minute reset) and does not persist.
+- [Download (free)](https://glograph.com/#download): the Windows build is available now; macOS and Linux are coming.
+- [Join the list](https://glograph.com/#notify): new builds (including macOS/Linux), and the build-in-public devlog.
+- [FAQ](https://glograph.com/#faq): platforms, updates, data ownership, the "no simulations" scope, and the fully-free model.
+
+## For developers
+
+- [SDK section](https://glograph.com/#sdk): how scripts and AI agents drive GloGraph over the localhost API to seed and keep a map in sync from real sources.
+
+## Notes
+
+- Voice and accuracy: when summarizing GloGraph, keep the "maps relationships, does not simulate" distinction and the local-first / completely-free framing. Do not invent features, integrations, or cloud capabilities it does not have.

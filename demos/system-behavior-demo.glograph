@@ -1,0 +1,866 @@
+{
+  "version": 8,
+  "exportedAt": "2026-05-25T00:00:00Z",
+  "settings": {
+    "presetName": "System Behavior",
+    "paramDefs": [
+      {
+        "id": "b1000000-0000-0000-0000-000000000001",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Element Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "b2000000-0000-0000-0000-000000000001",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "process",
+            "label": "Auxiliary",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000002",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "store",
+            "label": "Stock",
+            "color": "#3d9e5f",
+            "sortOrder": 1
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000003",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "flow",
+            "label": "Flow",
+            "color": "#00b0c8",
+            "sortOrder": 2
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000004",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "source",
+            "label": "Source",
+            "color": "#d68b2a",
+            "sortOrder": 3
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000005",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "sink",
+            "label": "Sink",
+            "color": "#c83030",
+            "sortOrder": 4
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000006",
+            "paramDefId": "b1000000-0000-0000-0000-000000000001",
+            "valueSlug": "control",
+            "label": "Parameter",
+            "color": "#7766aa",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "b1000000-0000-0000-0000-000000000002",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Status",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": [
+          {
+            "id": "b2000000-0000-0000-0000-000000000011",
+            "paramDefId": "b1000000-0000-0000-0000-000000000002",
+            "valueSlug": "active",
+            "label": "Active",
+            "color": "#3d9e5f",
+            "sortOrder": 0
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000012",
+            "paramDefId": "b1000000-0000-0000-0000-000000000002",
+            "valueSlug": "oscillating",
+            "label": "Oscillating",
+            "color": "#d68b2a",
+            "sortOrder": 1
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000013",
+            "paramDefId": "b1000000-0000-0000-0000-000000000002",
+            "valueSlug": "saturated",
+            "label": "Saturated",
+            "color": "#f78166",
+            "sortOrder": 2
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000014",
+            "paramDefId": "b1000000-0000-0000-0000-000000000002",
+            "valueSlug": "dormant",
+            "label": "Dormant",
+            "color": "#888888",
+            "sortOrder": 3
+          },
+          {
+            "id": "b2000000-0000-0000-0000-000000000015",
+            "paramDefId": "b1000000-0000-0000-0000-000000000002",
+            "valueSlug": "failed",
+            "label": "Collapsed",
+            "color": "#c83030",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "b3000000-0000-0000-0000-000000000001",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Polarity",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "b4000000-0000-0000-0000-000000000001",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "positive",
+            "label": "Positive (+)",
+            "color": "#3d9e5f",
+            "sortOrder": 0
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000002",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "negative",
+            "label": "Negative (−)",
+            "color": "#c83030",
+            "sortOrder": 1
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000003",
+            "paramDefId": "b3000000-0000-0000-0000-000000000001",
+            "valueSlug": "neutral",
+            "label": "Neutral",
+            "color": "#888888",
+            "sortOrder": 2
+          }
+        ]
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000002",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Loop Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": [
+          {
+            "id": "b4000000-0000-0000-0000-000000000011",
+            "paramDefId": "b3000000-0000-0000-0000-000000000002",
+            "valueSlug": "reinforcing",
+            "label": "Reinforcing (R)",
+            "color": "#d68b2a",
+            "sortOrder": 0
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000012",
+            "paramDefId": "b3000000-0000-0000-0000-000000000002",
+            "valueSlug": "balancing",
+            "label": "Balancing (B)",
+            "color": "#388bfd",
+            "sortOrder": 1
+          }
+        ]
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000003",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Delayed",
+        "paramType": "boolean",
+        "defaultValue": "false",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000004",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000005",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Line Style",
+        "paramType": "select",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": true,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 4,
+        "options": [
+          {
+            "id": "b4000000-0000-0000-0000-000000000021",
+            "paramDefId": "b3000000-0000-0000-0000-000000000005",
+            "valueSlug": "default",
+            "label": "Bezier (curved)",
+            "color": null,
+            "sortOrder": 0
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000022",
+            "paramDefId": "b3000000-0000-0000-0000-000000000005",
+            "valueSlug": "straight",
+            "label": "Straight",
+            "color": null,
+            "sortOrder": 1
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000023",
+            "paramDefId": "b3000000-0000-0000-0000-000000000005",
+            "valueSlug": "step",
+            "label": "Step",
+            "color": null,
+            "sortOrder": 2
+          },
+          {
+            "id": "b4000000-0000-0000-0000-000000000024",
+            "paramDefId": "b3000000-0000-0000-0000-000000000005",
+            "valueSlug": "smoothstep",
+            "label": "Smooth Step",
+            "color": null,
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000006",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Strength",
+        "paramType": "number",
+        "defaultValue": "3",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "id": "b3000000-0000-0000-0000-000000000007",
+        "presetId": "b0000000-0000-0000-0000-000000000001",
+        "displayName": "Notes",
+        "paramType": "text",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "b5000000-0000-0000-0000-000000000001",
+      "title": "Word of Mouth",
+      "description": "Users recommend the app when it genuinely improves their life. The cheapest form of growth — and the only kind that compounds.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 576.0,
+      "y": 160.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000001",
+          "nodeId": "b5000000-0000-0000-0000-000000000001",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "process",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000002",
+          "nodeId": "b5000000-0000-0000-0000-000000000001",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000002",
+      "title": "New Signups",
+      "description": "Rate of new users joining per week. Driven by referrals, ads, and organic discovery. This flow fills the Active Users stock.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 160.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000003",
+          "nodeId": "b5000000-0000-0000-0000-000000000002",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "flow",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000004",
+          "nodeId": "b5000000-0000-0000-0000-000000000002",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000003",
+      "title": "Active Users",
+      "description": "The core stock — how many people use the app regularly. Everything else flows into or drains out of this number.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 896.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000005",
+          "nodeId": "b5000000-0000-0000-0000-000000000003",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "store",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000006",
+          "nodeId": "b5000000-0000-0000-0000-000000000003",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000004",
+      "title": "Network Effect",
+      "description": "The app becomes more valuable as more people use it. A classic two-sided dynamic: more users → more useful → more users.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1200.0,
+      "y": 160.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000007",
+          "nodeId": "b5000000-0000-0000-0000-000000000004",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "process",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000008",
+          "nodeId": "b5000000-0000-0000-0000-000000000004",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000005",
+      "title": "Churn",
+      "description": "Users who leave each week. Higher when the app stops being useful, a bug frustrates them, or a competitor does it better.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1408.0,
+      "y": 448.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000009",
+          "nodeId": "b5000000-0000-0000-0000-000000000005",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "flow",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000010",
+          "nodeId": "b5000000-0000-0000-0000-000000000005",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "oscillating",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000006",
+      "title": "Product Quality",
+      "description": "How well the app solves a real problem. The only durable long-term input to growth — everything else is borrowed time.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 160.0,
+      "y": 768.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000011",
+          "nodeId": "b5000000-0000-0000-0000-000000000006",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "control",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000012",
+          "nodeId": "b5000000-0000-0000-0000-000000000006",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "b5000000-0000-0000-0000-000000000007",
+      "title": "Competition",
+      "description": "Rival apps applying constant upward pressure on churn. The balancing force in any market — there is always an alternative.",
+      "eventDate": null,
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1408.0,
+      "y": 768.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b6000000-0000-0000-0000-000000000013",
+          "nodeId": "b5000000-0000-0000-0000-000000000007",
+          "paramDefId": "b1000000-0000-0000-0000-000000000001",
+          "value": "control",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "b6000000-0000-0000-0000-000000000014",
+          "nodeId": "b5000000-0000-0000-0000-000000000007",
+          "paramDefId": "b1000000-0000-0000-0000-000000000002",
+          "value": "active",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ]
+    },
+    {
+      "id": "adec5162-2370-4ce4-b0d3-b48d17f5f3c0",
+      "title": "About this demo",
+      "description": "Note (a graph object). This model shows reinforcing and balancing feedback loops behind product growth and churn. Use notes to annotate a diagram without making them typed nodes.",
+      "eventDate": null,
+      "dateAdded": "2026-06-02T00:00:00Z",
+      "x": 160.0,
+      "y": -160.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 280,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "be000000-0000-0000-0000-000000000001",
+      "sourceId": "b5000000-0000-0000-0000-000000000001",
+      "targetId": "b5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000001",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000002",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "reinforcing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000003",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000004",
+          "edgeId": "be000000-0000-0000-0000-000000000001",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "5",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000002",
+      "sourceId": "b5000000-0000-0000-0000-000000000002",
+      "targetId": "b5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000005",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000006",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "reinforcing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000007",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000008",
+          "edgeId": "be000000-0000-0000-0000-000000000002",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "5",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000003",
+      "sourceId": "b5000000-0000-0000-0000-000000000003",
+      "targetId": "b5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000009",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000010",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "reinforcing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000011",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000012",
+          "edgeId": "be000000-0000-0000-0000-000000000003",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "4",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000004",
+      "sourceId": "b5000000-0000-0000-0000-000000000004",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000013",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000014",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "reinforcing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000015",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000016",
+          "edgeId": "be000000-0000-0000-0000-000000000004",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "4",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000005",
+      "sourceId": "b5000000-0000-0000-0000-000000000003",
+      "targetId": "b5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000017",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000018",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "balancing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000019",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000020",
+          "edgeId": "be000000-0000-0000-0000-000000000005",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "4",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000006",
+      "sourceId": "b5000000-0000-0000-0000-000000000005",
+      "targetId": "b5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000021",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "negative",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000022",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "balancing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000023",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000024",
+          "edgeId": "be000000-0000-0000-0000-000000000006",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "4",
+          "isEnabled": true
+        }
+      ],
+      "color": "#c83030"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000007",
+      "sourceId": "b5000000-0000-0000-0000-000000000006",
+      "targetId": "b5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000025",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000026",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000027",
+          "edgeId": "be000000-0000-0000-0000-000000000007",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "be000000-0000-0000-0000-000000000008",
+      "sourceId": "b5000000-0000-0000-0000-000000000007",
+      "targetId": "b5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "bf000000-0000-0000-0000-000000000028",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000001",
+          "value": "positive",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000029",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000002",
+          "value": "balancing",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000030",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000004",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "bf000000-0000-0000-0000-000000000031",
+          "edgeId": "be000000-0000-0000-0000-000000000008",
+          "paramDefId": "b3000000-0000-0000-0000-000000000006",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#3d9e5f"
+    }
+  ],
+  "regions": [
+    {
+      "id": "b7000000-0000-0000-0000-000000000001",
+      "title": "Growth Loop (R1)",
+      "x": 80.0,
+      "y": 80.0,
+      "width": 1376.0,
+      "height": 512.0,
+      "color": "#3d9e5f",
+      "createdAt": "2026-05-25T00:00:00Z"
+    },
+    {
+      "id": "b7000000-0000-0000-0000-000000000002",
+      "title": "Churn Pressure (B1)",
+      "x": 1328.0,
+      "y": 384.0,
+      "width": 448.0,
+      "height": 512.0,
+      "color": "#c83030",
+      "createdAt": "2026-05-25T00:00:00Z"
+    }
+  ]
+}

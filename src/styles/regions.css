@@ -1,0 +1,113 @@
+/* ─── Region Card ────────────────────────────────────────────────── */
+.region-card {
+  border: 2px solid var(--region-color, #484848);
+  border-radius: 0;
+  /* The region is draggable (header + body); buttons override to pointer. */
+  cursor: move;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.region-card--selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.region-card__header {
+  align-items: center;
+  /* Flat tint (weakened gradient) for a blockier region header. */
+  background: color-mix(in srgb, var(--region-color, #484848) 30%, #181818);
+  border-bottom: 1px solid var(--region-color, #484848);
+  display: flex;
+  flex-shrink: 0;
+  gap: 6px;
+  height: 28px;
+  padding: 0 6px 0 8px;
+}
+
+.region-card--minimized .region-card__header {
+  border-bottom: none;
+}
+
+.region-captured-badge {
+  align-items: center;
+  color: var(--accent-2);
+  display: flex;
+  flex-shrink: 0;
+  line-height: 0;
+  opacity: 0.55;
+}
+
+.region-card__title {
+  color: var(--text-muted);
+  flex: 1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.region-minimize-btn,
+.region-lock-btn {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: 16px;
+  justify-content: center;
+  padding: 0;
+  width: 16px;
+}
+
+.region-minimize-btn:hover,
+.region-lock-btn:hover {
+  background: var(--surface-3);
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.region-lock-btn--active {
+  background: color-mix(in srgb, var(--region-color, #484848) 18%, transparent);
+  border-color: var(--region-color, #484848);
+  color: var(--region-color, #484848);
+}
+
+.region-lock-btn--active:hover {
+  background: color-mix(in srgb, var(--region-color, #484848) 30%, transparent);
+}
+
+.region-card__body {
+  background: rgba(20, 20, 20, 0.35);
+  flex: 1;
+  min-height: 0;
+}
+
+/* ─── Sidebar — region support ───────────────────────────────────── */
+.node-list-item__dot--region {
+  border-radius: 2px;
+}
+
+.sidebar__section-label {
+  color: var(--text-dim);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 6px 8px 3px;
+  text-transform: uppercase;
+}
+
+.sidebar__section-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 4px 0;
+}

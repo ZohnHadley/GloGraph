@@ -1,0 +1,13 @@
+{
+  "license": "Public domain / CC0 \u2014 images: Wikimedia Commons (PD/CC0); audio: Kenney.nl CC0; video: synthesised from PD images",
+  "images": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\01-Recording-studio-console-for-DAW-work-20.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\02-Recording-studio-console-for-DAW-work-20.jpg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\03-Recording-studio-console-for-DAW-work-20.jpg"
+  ],
+  "audio": [
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\music__jingles_SAX07.ogg",
+    "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\sfx__confirmation_003.ogg"
+  ],
+  "video": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\music\\preview.mp4"
+}

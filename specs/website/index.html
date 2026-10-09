@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GloGraph: a living map of how your system connects</title>
+  <meta name="description" content="For software architects: keep a typed, queryable map of your system, its services, dependencies, and what breaks if one changes. Trace impact, script it, own the file. Local-first." />
+  <meta name="author" content="GloGraph" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#171717" />
+  <meta name="keywords" content="system architecture map, dependency graph, impact analysis, blast radius, local-first, typed graph, causal map, systems thinking, Python SDK, Tauri desktop app" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="GloGraph: a living map of how your system connects" />
+  <meta property="og:description" content="A diagram forgets. GloGraph remembers. A typed, queryable, local-first map of your architecture, its services, dependencies, and blast radius, that you can trace and script." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glograph.com/" />
+  <meta property="og:site_name" content="GloGraph" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://glograph.com/assets/og-image-v3.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GloGraph: a typed, queryable map of how a system connects." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GloGraph: a living map of how your system connects" />
+  <meta name="twitter:description" content="A diagram forgets. GloGraph remembers. A typed, queryable, local-first map of your architecture, its services, dependencies, and blast radius, that you can trace and script." />
+  <meta name="twitter:image" content="https://glograph.com/assets/og-image-v3.png" />
+
+  <link rel="icon" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon-128.png" />
+  <link rel="canonical" href="https://glograph.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Load fonts without blocking first paint: preload as style, swap to stylesheet on load. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Privacy-friendly analytics by Plausible. Custom events (cta_click,
+       notify_submit) flow through window.plausible(), see main.js trackEvent(). -->
+  <script async src="https://plausible.io/js/pa-Mik-SO17p-Kfv41bHW4Xo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+
+  <!-- Structured data (JSON-LD): helps search engines build rich results and gives AI
+       answer engines (ChatGPT, Perplexity, Google AI Overviews) a clean, factual model of
+       what GloGraph is, what it costs, and its FAQ. Keep facts in sync with the page copy. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://glograph.com/#website",
+        "url": "https://glograph.com/",
+        "name": "GloGraph",
+        "description": "A local-first, scriptable workstation for typed causal and systems maps. A diagram forgets; GloGraph remembers.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://glograph.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://glograph.com/#org",
+        "name": "GloGraph",
+        "url": "https://glograph.com/",
+        "logo": "https://glograph.com/favicon-128.png"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://glograph.com/#app",
+        "name": "GloGraph",
+        "url": "https://glograph.com/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "description": "GloGraph is a local-first desktop app for building typed, queryable relational and causal graphs. Map how a system connects, its services, dependencies, and decisions, then trace what breaks when one part changes. Every project is a portable .glograph file (JSON over SQLite) you own, and you can build or sync the map from scripts via a Python SDK and a localhost HTTP API. It maps and queries relationships qualitatively; it does not run numerical simulations.",
+        "softwareVersion": "0.9.9",
+        "releaseNotes": "Beta",
+        "image": "https://glograph.com/assets/og-image-v3.png",
+        "screenshot": "https://glograph.com/assets/agent-memory-screenshot.png",
+        "featureList": [
+          "Typed nodes and edges driven by editable presets",
+          "Impact trace: one-click upstream/downstream blast radius",
+          "Regions to group and lock parts of a map",
+          "Dagre auto-layout",
+          "Exports to PNG, CSV, Mermaid, and DOT",
+          "Python SDK and embedded localhost HTTP API",
+          "Local-first .glograph files (JSON over SQLite), fully offline",
+          "Multi-project tabs"
+        ],
+        "publisher": { "@id": "https://glograph.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://glograph.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which platforms are supported?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Windows, macOS, and Linux. GloGraph is a native desktop app built with Tauri." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I own my data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Completely. Projects are plain .glograph files (JSON over SQLite) on your own disk. No cloud, no account, works fully offline. Export to PNG, CSV, Mermaid, or DOT any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it run numerical simulations?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No, and we will not pretend otherwise. GloGraph maps and queries typed relationships qualitatively. For numerical stocks-and-flows simulation, use a dedicated simulation suite." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GloGraph really free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free with full access to every feature. No tiers, no license keys, no accounts, no node or project limits. That includes the HTTP API + Python SDK and clean, unwatermarked exports." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ───────────────────────── Early-access banner ───────────────────────── -->
+  <div class="founder-banner" id="founder">
+    <span class="founder-banner__tag">FREE BETA</span>
+    <span class="founder-banner__text">GloGraph is in beta and free to download for Windows.</span>
+    <a href="#download" class="founder-banner__link" data-cta="founder-banner">Download →</a>
+  </div>
+
+  <!-- ───────────────────────── Top nav ───────────────────────── -->
+  <header class="nav">
+    <a class="nav__brand" href="#top">GLOGRAPH</a>
+    <nav class="nav__links">
+      <a href="#why">Why</a>
+      <a href="#features">Features</a>
+      <a href="#sdk">SDK</a>
+      <a href="/demo/">Demo</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#download" class="btn btn--primary nav__cta" data-cta="nav-download">Download free</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══════════════════════ 1. HERO ═══════════════════════ -->
+    <section class="hero">
+      <div class="hero__copy">
+        <div class="kicker">FOR SOFTWARE ARCHITECTS · LOCAL-FIRST · SCRIPTABLE</div>
+        <h1 class="hero__title">
+          A diagram forgets.<br /><span class="amber">GloGraph remembers.</span>
+        </h1>
+        <p class="hero__lede">
+          Map your system as a typed, queryable graph: services, datastores, dependencies, and the
+          decisions behind them. Keep it as <strong>a living model you can trace, question, and script</strong>,
+          not a diagram that goes stale the day you draw it. Local-first, and yours.
+        </p>
+        <p class="hero__tagline">Know what depends on what, and what breaks when it changes.</p>
+
+        <!-- Free download is the primary action; demo is the no-install path. -->
+        <div class="hero__actions">
+          <a href="/download/GloGraph-Setup-Windows-x64.exe" class="btn btn--primary btn--lg" data-cta="hero-download" download>Download for Windows — free</a>
+          <a href="/demo/" class="btn btn--lg" data-cta="hero-demo">Try the live demo</a>
+        </div>
+        <p class="hero__notify-note">
+          Free · Windows x64 · beta. Code-signed, though SmartScreen may still warn
+          until the new signature builds reputation. macOS and Linux coming.
+          Or <a href="#notify">get launch updates</a>.
+        </p>
+
+        <div class="hero__meta">
+          <span>Windows · macOS · Linux</span>
+          <span class="dot">·</span>
+          <span>Your data in portable <code>.glograph</code> files</span>
+          <span class="dot">·</span>
+          <span>No cloud, no account</span>
+        </div>
+      </div>
+
+      <!-- Hero canvas: a real app screenshot of the system-map demo (canvas cropped). -->
+      <div class="hero__visual">
+        <div class="winchrome">
+          <div class="winchrome__bar">
+            <span class="winchrome__title">GLOGRAPH · payments-system.glograph</span>
+            <span class="winchrome__badge"><span class="led"></span>API</span>
+          </div>
+          <img class="winchrome__shot" src="assets/agent-memory-hero.png"
+               alt="GloGraph canvas: a map of a system's services and datastore, with an incident and its mitigation, connected by typed dependency relationships." />
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 2. CORE DIFFERENTIATOR ═══════════════════════ -->
+    <section class="section" id="why">
+      <div class="section__head">
+        <div class="kicker">THE DIFFERENCE</div>
+        <h2>Your architecture, as data you can question.</h2>
+        <p class="section__sub">
+          Most diagram tools draw boxes and lines that rot the moment your system changes. GloGraph stores
+          a small typed database behind the map, so "what depends on this?" and "what breaks if it changes?"
+          are queries, not archaeology.
+        </p>
+      </div>
+      <div class="pillars">
+        <article class="pillar">
+          <div class="pillar__icon">01</div>
+          <h3>Scriptable</h3>
+          <p>
+            An embedded localhost REST API and a zero-dependency Python SDK. Seed and stream graphs,
+            upsert by your own IDs, traverse, and push layouts back, with live canvas sync. Point a
+            script or an AI agent at it.
+          </p>
+        </article>
+        <article class="pillar">
+          <div class="pillar__icon">02</div>
+          <h3>Local-first, own your data</h3>
+          <p>
+            Every project is a portable <code>.glograph</code> file over SQLite on your own disk. No
+            cloud, no account, no lock-in. Works fully offline, forever.
+          </p>
+        </article>
+        <article class="pillar">
+          <div class="pillar__icon">03</div>
+          <h3>Trace the blast radius</h3>
+          <p>
+            Right-click any node and trace upstream or downstream: see everything that breaks if it
+            changes, or everything a change depends on. The query a static diagram can't answer.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 3. FEATURE HIGHLIGHTS ═══════════════════════ -->
+    <section class="section section--alt" id="features">
+      <div class="section__head">
+        <div class="kicker">WHAT'S INSIDE</div>
+        <h2>An instrument, not a canvas toy.</h2>
+        <p class="section__sub">
+          Dense, keyboard-first, and built for users who return daily. Define your own node and edge
+          fields with presets. The whole tool reshapes around your domain.
+        </p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <h3>Typed nodes &amp; edges</h3>
+          <p>Per-preset categories, statuses, and custom parameters drive node colour/badges and edge arrowheads, line style, colour, and width.</p>
+        </div>
+        <div class="feature">
+          <h3>Regions</h3>
+          <p>Resizable groups that lock so a cluster drags as a unit, or minimize to a header. Crossing edges remap automatically.</p>
+        </div>
+        <div class="feature">
+          <h3>Auto-layout</h3>
+          <p>One-key dagre layout, top-down or left-right, lock-aware so grouped clusters stay put.</p>
+        </div>
+        <div class="feature">
+          <h3>Timeline view</h3>
+          <p>Sort dated events along a timeline and jump straight to any node on the canvas.</p>
+        </div>
+        <div class="feature">
+          <h3>Rich media</h3>
+          <p>Inline image, video, and audio on nodes, plus standalone note/image/video/audio graph objects you can wire into the graph.</p>
+        </div>
+        <div class="feature">
+          <h3>Exports</h3>
+          <p>PNG, CSV, Mermaid, and DOT/Graphviz. Take your structure anywhere.</p>
+        </div>
+        <div class="feature">
+          <h3>Multi-project tabs</h3>
+          <p>Several isolated projects open at once, each its own database, saved to a portable file.</p>
+        </div>
+        <div class="feature">
+          <h3>Keyboard-first</h3>
+          <p>~22 shortcuts: quick-find, quick-connect, auto-wire a selection, routing cycling, focus mode, and undo/redo across everything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 4. SHOW THE SDK ═══════════════════════ -->
+    <section class="section" id="sdk">
+      <div class="sdk">
+        <div class="sdk__copy">
+          <div class="kicker">FOR SCRIPTS &amp; PIPELINES</div>
+          <h2>Drive your graph from code.</h2>
+          <p>
+            The Python SDK is zero-dependency, standard library only. Enable the API in
+            <em>Preferences → API</em>, point the client (or an AI agent) at <code>127.0.0.1:57321</code>,
+            and seed, stream, query, or relayout a graph programmatically while the canvas updates live.
+          </p>
+          <ul class="sdk__list">
+            <li>Idempotent upserts by your own external IDs, safe to re-run and stream</li>
+            <li>Typed params by name, no UUIDs: <code>params={"Domain": "Economic"}</code></li>
+            <li>Batch create, traverse neighbours, push computed layouts back</li>
+            <li>Sync from infra-as-code, a service registry, or CI; or point an AI agent at it</li>
+          </ul>
+          <p class="sdk__note">
+            Because it's a plain localhost API, anything that can make an HTTP request, a script, a CI
+            job, or an AI agent, can build and update your graph. The API and SDK are free, like the rest of the app.
+          </p>
+        </div>
+        <div class="sdk__code">
+          <div class="codeblock">
+            <div class="codeblock__bar"><span>python</span><span class="codeblock__file">seed.py</span></div>
+<pre><code><span class="c-kw">from</span> glograph <span class="c-kw">import</span> GloGraph
+
+g = <span class="c-fn">GloGraph</span>(token=<span class="c-str">""</span>)              <span class="c-cm"># enable the API in Preferences first</span>
+
+<span class="c-cm"># Typed params by name; upsert by your own id (idempotent)</span>
+fed = g.nodes.<span class="c-fn">upsert</span>(external_id=<span class="c-str">"FED_JUN22"</span>, title=<span class="c-str">"Fed +75bps"</span>,
+                     x=<span class="c-num">100</span>, y=<span class="c-num">120</span>, params={<span class="c-str">"Domain"</span>: <span class="c-str">"Economic"</span>})
+cpi = g.nodes.<span class="c-fn">upsert</span>(external_id=<span class="c-str">"CPI_JUN22"</span>, title=<span class="c-str">"CPI 9.1%"</span>,
+                     x=<span class="c-num">400</span>, y=<span class="c-num">120</span>, params={<span class="c-str">"Domain"</span>: <span class="c-str">"Economic"</span>})
+g.edges.<span class="c-fn">upsert</span>(external_id=<span class="c-str">"fed-&gt;cpi"</span>, source_id=fed[<span class="c-str">"id"</span>],
+               target_id=cpi[<span class="c-str">"id"</span>], params={<span class="c-str">"Causation"</span>: <span class="c-str">"Caused By"</span>})
+
+<span class="c-cm"># Re-run or stream live: upserts update in place, no duplicates</span>
+<span class="c-kw">for</span> row <span class="c-kw">in</span> feed():
+    g.nodes.<span class="c-fn">upsert</span>(external_id=row[<span class="c-str">"id"</span>], title=row[<span class="c-str">"name"</span>])</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 5. GALLERY / DEMOS ═══════════════════════ -->
+    <section class="section section--alt" id="gallery">
+      <div class="section__head">
+        <div class="kicker">SHIPPED EXAMPLES</div>
+        <h2>Five worked maps, in the box.</h2>
+        <p class="section__sub">
+          GloGraph ships example presets as starting points, not the foundation. The data model bends
+          to your domain, from a system's architecture to economics.
+        </p>
+      </div>
+      <div class="gallery">
+        <figure class="shot">
+          <div class="shot__img" data-shot="System Map">
+            <img src="assets/agent-memory-screenshot.png" alt="GloGraph app showing a system map: typed service and datastore nodes in two regions, an incident and its mitigation, connected by labeled dependency relationships" />
+          </div>
+          <figcaption>System Map: a service's dependencies, and what breaks if one fails</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__img" data-shot="Macro Economics">
+            <img src="assets/macro-economics-demo.png" alt="Macro Economics demo: 2022–23 global macro crisis" />
+          </div>
+          <figcaption>Macro Economics: 2022–23 global macro crisis</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__img" data-shot="System Behavior">
+            <img src="assets/system-behavior-demo.png" alt="System Behavior demo: population and resource feedback loops" />
+          </div>
+          <figcaption>System Behavior: population &amp; resource feedback loops</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__img" data-shot="Knowledge Map">
+            <img src="assets/knowledge-map-demo.png" alt="Knowledge Map demo: understanding inflation" />
+          </div>
+          <figcaption>Knowledge Map: understanding inflation</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__img" data-shot="Project Tracker">
+            <img src="assets/project-tracker-demo.png" alt="Project Tracker demo: a versioned launch plan" />
+          </div>
+          <figcaption>Project Tracker: a versioned launch plan</figcaption>
+        </figure>
+      </div>
+      <div class="gallery__cta">
+        <a href="/demo/" class="btn btn--primary btn--lg" data-cta="gallery-demo">Try the live demo →</a>
+        <p class="gallery__cta-note">Explore these maps in your browser, no install. Or open your own <code>.glograph</code>.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 6. POSITIONING (gentle) ═══════════════════════ -->
+    <section class="section" id="compare">
+      <div class="section__head">
+        <div class="kicker">HOW IT COMPARES</div>
+        <h2>Built on three contrasts.</h2>
+      </div>
+      <div class="compare">
+        <div class="compare__row">
+          <div class="compare__them">A diagram that's stale the day you draw it</div>
+          <div class="compare__us"><span class="amber">A living model you trace, query, and script</span></div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__them">Cloud-only, your maps on someone's server</div>
+          <div class="compare__us"><span class="amber">Local-first, files you own, fully offline</span></div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__them">Boxes and arrows you re-read by hand</div>
+          <div class="compare__us"><span class="amber">Ask what depends on what; trace the blast radius</span></div>
+        </div>
+      </div>
+      <p class="honesty">
+        <strong>An honest note:</strong> GloGraph <em>maps and queries</em> typed relationships. It does not run numerical simulations. If you need to simulate stocks-and-flows dynamics, a
+        dedicated simulation suite is the right tool. GloGraph lives in the gap between cloud-hosted
+        mapping tools and heavy desktop simulation.
+      </p>
+    </section>
+
+    <!-- ═══════════════════════ 6.5 ROADMAP ═══════════════════════ -->
+    <section class="section section--alt" id="roadmap">
+      <div class="section__head">
+        <div class="kicker">ROADMAP</div>
+        <h2>Here today, growing in the open.</h2>
+        <p class="section__sub">
+          GloGraph is in beta. Here's what ships in the app right now, and what's coming next.
+        </p>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap__col">
+          <div class="roadmap__head roadmap__head--now">In the app today</div>
+          <ul class="roadmap__list">
+            <li>Typed nodes and edges with custom presets</li>
+            <li>Regions, bookmarks, and graph notes</li>
+            <li>Impact trace: see what a node affects, or what affects it</li>
+            <li>Local HTTP API and a zero-dependency Python SDK to script your graphs</li>
+            <li>Stream data in over the API; scripts and AI agents can read and build graphs</li>
+            <li>PNG, CSV, Mermaid, and DOT export</li>
+            <li>Multi-project tabs, local-first in a portable file</li>
+          </ul>
+        </div>
+        <div class="roadmap__col">
+          <div class="roadmap__head roadmap__head--next">On the roadmap</div>
+          <ul class="roadmap__list roadmap__list--next">
+            <li><strong>Live Share</strong> (work in progress): edit a graph together in real time over your LAN. Cross-machine co-editing works in preview today; a self-hosted server option and more polish are landing next.</li>
+            <li><strong>Agent memory over MCP</strong> (work in progress): drop GloGraph in over the Model Context Protocol as memory your AI agent reads and writes, with semantic recall, and that you can actually see and edit on the canvas, instead of a black-box vector store</li>
+            <li>Deeper AI integration: agents that build and reason over whole projects</li>
+            <li>More ingestion and export recipes for the SDK</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ DOWNLOAD (FREE) ═══════════════════════ -->
+    <section class="section section--alt" id="download">
+      <div class="download">
+        <div class="kicker">DOWNLOAD · FREE</div>
+        <h2>Get GloGraph free.</h2>
+        <p class="section__sub">
+          The full editor, free while in beta: typed graphs, regions, auto-layout, impact trace, and
+          your data in portable <code>.glograph</code> files on your own disk. No cloud, no account.
+        </p>
+        <!-- Stable filename: to ship a new release, overwrite website/download/GloGraph-Setup-Windows-x64.exe and redeploy — no HTML change needed. -->
+        <a href="/download/GloGraph-Setup-Windows-x64.exe" class="btn btn--primary btn--lg" data-cta="download-win" download>Download for Windows — free</a>
+        <p class="notify__fineprint">Windows x64 · beta installer (.exe) · free</p>
+        <p class="notify__fineprint">
+          The installer is code-signed (SSL.com certificate), but because the signature is new,
+          Windows SmartScreen may still show a "not commonly downloaded" warning — click
+          <strong>More info → Run anyway</strong>; this fades as more people install. macOS and Linux
+          builds are coming; meanwhile try the <a href="/demo/">live demo</a> in any browser.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ EMAIL CAPTURE ═══════════════════════ -->
+    <section class="section notify" id="notify">
+      <div class="notify__inner">
+        <div class="kicker">STAY IN THE LOOP</div>
+        <h2>Follow along.</h2>
+        <p class="section__sub">
+          Product updates, new builds (including macOS/Linux), and the
+          build-in-public devlog. No spam; unsubscribe any time.
+        </p>
+        <!-- Buttondown embed. main.js fires the notify_submit event, then the form POSTs here. -->
+        <form class="notify__form embeddable-buttondown-form" data-where="footer" action="https://buttondown.com/api/emails/embed-subscribe/glo" method="post">
+          <!-- Tags every signup "community" (one pre-launch list; no buy/founder segmentation while pricing is deferred). -->
+          <input type="hidden" name="tag" data-notify-tag value="community" />
+          <input type="hidden" name="metadata__intent" data-notify-meta value="community" />
+          <input type="email" name="email" placeholder="you@example.com" required autocomplete="email" class="notify__input" aria-label="Email address" />
+          <button type="submit" class="btn btn--primary" data-cta="notify-submit">Notify me</button>
+        </form>
+        <div class="notify__ok" data-notify-ok role="status" hidden>Thanks, you're on the list.</div>
+        <p class="notify__fineprint">Only GloGraph updates. Unsubscribe anytime. <a href="/privacy">Privacy</a>.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 8. FAQ ═══════════════════════ -->
+    <section class="section section--alt" id="faq">
+      <div class="section__head">
+        <div class="kicker">FAQ</div>
+        <h2>Straight answers.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is it really free?</summary>
+          <p>Yes — completely free, with full access to every feature. No tiers, no license keys, no accounts, no node or project limits. That includes the HTTP API + Python SDK and clean, unwatermarked exports. Your data stays in local <code>.glograph</code> files on your own disk.</p>
+        </details>
+        <details>
+          <summary>Why does Windows warn about the installer?</summary>
+          <p>The installer is code-signed with an SSL.com certificate, but the signature is new, so SmartScreen may still show a "not commonly downloaded" warning until it builds reputation. Click <strong>More info → Run anyway</strong>; this fades as more people install.</p>
+        </details>
+        <details>
+          <summary>Which platforms are supported?</summary>
+          <p>GloGraph is a native desktop app (Tauri) built for Windows, macOS, and Linux. The <strong>Windows</strong> build is available to download now; macOS and Linux builds are coming. Or use the <a href="/demo/">live demo</a> in any browser.</p>
+        </details>
+        <details>
+          <summary>Do I own my data?</summary>
+          <p>Completely. Projects are plain <code>.glograph</code> files (JSON over SQLite) on your own disk. No cloud, no account, works fully offline. Export to PNG, CSV, Mermaid, or DOT any time.</p>
+        </details>
+        <details>
+          <summary>Does it run numerical simulations?</summary>
+          <p>No, and we won't pretend otherwise. GloGraph maps and queries typed relationships qualitatively. For numerical stocks-and-flows simulation, use a dedicated simulation suite.</p>
+        </details>
+        <details>
+          <summary>Do I need a license key or an account?</summary>
+          <p>No. There's nothing to activate and no account to create — download it and everything is unlocked. The app runs fully offline; no phone-home is required.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 9. FOOTER CTA ═══════════════════════ -->
+    <section class="footcta">
+      <h2>Build past the barrier between planning and action.</h2>
+      <div class="footcta__actions">
+        <a href="#notify" class="btn btn--primary btn--lg" data-cta="foot-notify">Get launch updates</a>
+        <a href="/demo/" class="btn btn--lg" data-cta="foot-demo">Try the live demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">GLOGRAPH</div>
+    <div class="footer__meta">Local-first, scriptable system memory. © <span id="year">2026</span> GloGraph.</div>
+    <nav class="footer__links">
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

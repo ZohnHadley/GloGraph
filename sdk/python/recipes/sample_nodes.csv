@@ -1,0 +1,8 @@
+external_id,title,category,description,event_date,tags
+UKR_22,Russia Invades Ukraine,political,Supply-shock trigger for energy and food,2022-02-24,geopolitics|supply
+OIL_22,Global Energy Price Spike,energy,Brent crude above $120,2022-03-08,commodities|energy
+FOOD_22,Food Supply Shock,natural,Grain and fertiliser disruption,2022-03-15,supply|food
+CPI_22,CPI Peaks at 9.1%,economic,US headline inflation peaks,2022-07-13,inflation
+FED_22,Fed Rate Hike +75bps,economic,FOMC front-loads tightening,2022-06-15,rates|policy
+USD_22,USD 20-Year High,market,DXY surges on rate differentials,2022-09-28,fx
+EM_22,Emerging Market Stress,market,Capital outflows and currency pressure,2022-10-01,fx|risk

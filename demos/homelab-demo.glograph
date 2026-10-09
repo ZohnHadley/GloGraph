@@ -1,0 +1,1630 @@
+{
+  "version": 8,
+  "exportedAt": "2026-06-04T00:00:00Z",
+  "settings": {
+    "presetName": "Home Lab",
+    "paramDefs": [
+      {
+        "id": "d1000000-0000-0000-0000-000000000001",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Type",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "d2000000-0000-0000-0000-000000000001",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "host",
+            "label": "Host",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "d2000000-0000-0000-0000-000000000002",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "service",
+            "label": "Service",
+            "color": "#7766aa",
+            "sortOrder": 1
+          },
+          {
+            "id": "d2000000-0000-0000-0000-000000000003",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "storage",
+            "label": "Storage",
+            "color": "#3d9e5f",
+            "sortOrder": 2
+          },
+          {
+            "id": "d2000000-0000-0000-0000-000000000004",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "network",
+            "label": "Network",
+            "color": "#d68b2a",
+            "sortOrder": 3
+          },
+          {
+            "id": "d2000000-0000-0000-0000-000000000005",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "task",
+            "label": "Task",
+            "color": "#888888",
+            "sortOrder": 4
+          },
+          {
+            "id": "d2000000-0000-0000-0000-000000000006",
+            "paramDefId": "d1000000-0000-0000-0000-000000000001",
+            "valueSlug": "risk",
+            "label": "Risk",
+            "color": "#c83030",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "d1000000-0000-0000-0000-000000000002",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Effort (h)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "d1000000-0000-0000-0000-000000000003",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Status",
+        "paramType": "select",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": true,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "d2500000-0000-0000-0000-000000000001",
+            "paramDefId": "d1000000-0000-0000-0000-000000000003",
+            "valueSlug": "planned",
+            "label": "Planned",
+            "color": null,
+            "sortOrder": 0
+          },
+          {
+            "id": "d2500000-0000-0000-0000-000000000002",
+            "paramDefId": "d1000000-0000-0000-0000-000000000003",
+            "valueSlug": "running",
+            "label": "Running",
+            "color": null,
+            "sortOrder": 1
+          },
+          {
+            "id": "d2500000-0000-0000-0000-000000000003",
+            "paramDefId": "d1000000-0000-0000-0000-000000000003",
+            "valueSlug": "down",
+            "label": "Needs work",
+            "color": null,
+            "sortOrder": 2
+          }
+        ]
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "d3000000-0000-0000-0000-000000000001",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Relation",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "d4000000-0000-0000-0000-000000000001",
+            "paramDefId": "d3000000-0000-0000-0000-000000000001",
+            "valueSlug": "depends-on",
+            "label": "Depends on",
+            "color": "#5588bb",
+            "sortOrder": 0
+          },
+          {
+            "id": "d4000000-0000-0000-0000-000000000002",
+            "paramDefId": "d3000000-0000-0000-0000-000000000001",
+            "valueSlug": "blocks",
+            "label": "Blocks",
+            "color": "#c83030",
+            "sortOrder": 1
+          },
+          {
+            "id": "d4000000-0000-0000-0000-000000000003",
+            "paramDefId": "d3000000-0000-0000-0000-000000000001",
+            "valueSlug": "part-of",
+            "label": "Part of",
+            "color": "#7766aa",
+            "sortOrder": 2
+          },
+          {
+            "id": "d4000000-0000-0000-0000-000000000004",
+            "paramDefId": "d3000000-0000-0000-0000-000000000001",
+            "valueSlug": "related",
+            "label": "Related",
+            "color": "#888888",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "d3000000-0000-0000-0000-000000000002",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "d3000000-0000-0000-0000-000000000003",
+        "presetId": "d0000000-0000-0000-0000-000000000001",
+        "displayName": "Weight",
+        "paramType": "number",
+        "defaultValue": "2",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 2,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "d5000000-0000-0000-0000-000000000001",
+      "title": "Proxmox host (NUC)",
+      "description": "Hypervisor. Runs most services as VMs/containers.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000011",
+          "nodeId": "d5000000-0000-0000-0000-000000000001",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "host",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000012",
+          "nodeId": "d5000000-0000-0000-0000-000000000001",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "4",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000013",
+          "nodeId": "d5000000-0000-0000-0000-000000000001",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000002",
+      "title": "Raspberry Pi 4",
+      "description": "Low-power always-on box for DNS.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 544.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000021",
+          "nodeId": "d5000000-0000-0000-0000-000000000002",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "host",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000022",
+          "nodeId": "d5000000-0000-0000-0000-000000000002",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000023",
+          "nodeId": "d5000000-0000-0000-0000-000000000002",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000003",
+      "title": "NAS (TrueNAS)",
+      "description": "Bulk storage + ZFS snapshots. Everything media depends on it.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000031",
+          "nodeId": "d5000000-0000-0000-0000-000000000003",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "storage",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000032",
+          "nodeId": "d5000000-0000-0000-0000-000000000003",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "6",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000033",
+          "nodeId": "d5000000-0000-0000-0000-000000000003",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000004",
+      "title": "UniFi switch",
+      "description": "Core 8-port switch with VLANs.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 544.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000041",
+          "nodeId": "d5000000-0000-0000-0000-000000000004",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "network",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000042",
+          "nodeId": "d5000000-0000-0000-0000-000000000004",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000043",
+          "nodeId": "d5000000-0000-0000-0000-000000000004",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000005",
+      "title": "Reverse proxy (Caddy)",
+      "description": "TLS termination + routing for every service.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1280.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000051",
+          "nodeId": "d5000000-0000-0000-0000-000000000005",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000052",
+          "nodeId": "d5000000-0000-0000-0000-000000000005",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000053",
+          "nodeId": "d5000000-0000-0000-0000-000000000005",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000006",
+      "title": "Pi-hole DNS",
+      "description": "Network-wide DNS + ad blocking.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1664.0,
+      "y": 288.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000061",
+          "nodeId": "d5000000-0000-0000-0000-000000000006",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000062",
+          "nodeId": "d5000000-0000-0000-0000-000000000006",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "1",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000063",
+          "nodeId": "d5000000-0000-0000-0000-000000000006",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000007",
+      "title": "Home Assistant",
+      "description": "Automations + dashboards.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1280.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000071",
+          "nodeId": "d5000000-0000-0000-0000-000000000007",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000072",
+          "nodeId": "d5000000-0000-0000-0000-000000000007",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "5",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000073",
+          "nodeId": "d5000000-0000-0000-0000-000000000007",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000008",
+      "title": "Vaultwarden",
+      "description": "Self-hosted password vault.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1664.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000081",
+          "nodeId": "d5000000-0000-0000-0000-000000000008",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000082",
+          "nodeId": "d5000000-0000-0000-0000-000000000008",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "2",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000083",
+          "nodeId": "d5000000-0000-0000-0000-000000000008",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000009",
+      "title": "Jellyfin",
+      "description": "Movies and TV streaming.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000091",
+          "nodeId": "d5000000-0000-0000-0000-000000000009",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000092",
+          "nodeId": "d5000000-0000-0000-0000-000000000009",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "3",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000093",
+          "nodeId": "d5000000-0000-0000-0000-000000000009",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000010",
+      "title": "Photo backup (Immich)",
+      "description": "Phone photo backup + timeline.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000101",
+          "nodeId": "d5000000-0000-0000-0000-000000000010",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000102",
+          "nodeId": "d5000000-0000-0000-0000-000000000010",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "3",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000103",
+          "nodeId": "d5000000-0000-0000-0000-000000000010",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "planned",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000011",
+      "title": "Rack photo",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 64.0,
+      "y": 1376.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "d9000000-0000-0000-0000-000000000011",
+          "nodeId": "d5000000-0000-0000-0000-000000000011",
+          "label": "Rack photo",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\01-1U-rack-mount-server-cooling-system-fan-.jpg",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000111",
+          "nodeId": "d5000000-0000-0000-0000-000000000011",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "host",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000112",
+          "nodeId": "d5000000-0000-0000-0000-000000000011",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000012",
+      "title": "Network map (sketch)",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 480.0,
+      "y": 1376.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "d9000000-0000-0000-0000-000000000012",
+          "nodeId": "d5000000-0000-0000-0000-000000000012",
+          "label": "Network map (sketch)",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\02-EFTA00002522---Cluttered-server-rack-fil.jpg",
+          "srcType": "file",
+          "mediaType": "image",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000121",
+          "nodeId": "d5000000-0000-0000-0000-000000000012",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "network",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000122",
+          "nodeId": "d5000000-0000-0000-0000-000000000012",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "image",
+      "width": 260,
+      "height": 180
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000013",
+      "title": "Doorbell chime",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 960.0,
+      "y": 1024.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "d9000000-0000-0000-0000-000000000013",
+          "nodeId": "d5000000-0000-0000-0000-000000000013",
+          "label": "Doorbell chime",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\music__jingles_NES00.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000131",
+          "nodeId": "d5000000-0000-0000-0000-000000000013",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000132",
+          "nodeId": "d5000000-0000-0000-0000-000000000013",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000014",
+      "title": "Alert sound",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 960.0,
+      "y": 1232.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "d9000000-0000-0000-0000-000000000014",
+          "nodeId": "d5000000-0000-0000-0000-000000000014",
+          "label": "Alert sound",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\sfx__confirmation_004.ogg",
+          "srcType": "file",
+          "mediaType": "audio",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000141",
+          "nodeId": "d5000000-0000-0000-0000-000000000014",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000142",
+          "nodeId": "d5000000-0000-0000-0000-000000000014",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "audio",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000015",
+      "title": "Dashboard tour",
+      "description": null,
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 896.0,
+      "y": 1440.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [
+        {
+          "id": "d9000000-0000-0000-0000-000000000015",
+          "nodeId": "d5000000-0000-0000-0000-000000000015",
+          "label": "Dashboard tour",
+          "src": "C:\\Users\\Zzohn\\Desktop\\GloGraph\\demos\\media\\homelab\\preview.mp4",
+          "srcType": "file",
+          "mediaType": "video",
+          "sortOrder": 0,
+          "showOnCard": true
+        }
+      ],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000151",
+          "nodeId": "d5000000-0000-0000-0000-000000000015",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "service",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000152",
+          "nodeId": "d5000000-0000-0000-0000-000000000015",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "running",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "video",
+      "width": 320,
+      "height": 200
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000016",
+      "title": "Offsite backup",
+      "description": "3-2-1 rule: encrypted backup to a friend's NAS.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1984.0,
+      "y": 1056.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000161",
+          "nodeId": "d5000000-0000-0000-0000-000000000016",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "task",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000162",
+          "nodeId": "d5000000-0000-0000-0000-000000000016",
+          "paramDefId": "d1000000-0000-0000-0000-000000000002",
+          "value": "4",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000163",
+          "nodeId": "d5000000-0000-0000-0000-000000000016",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "planned",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000017",
+      "title": "Risk: NAS is a SPOF",
+      "description": "If the NAS dies, media, photos, and backups all go with it.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1984.0,
+      "y": 1376.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "d6000000-0000-0000-0000-000000000171",
+          "nodeId": "d5000000-0000-0000-0000-000000000017",
+          "paramDefId": "d1000000-0000-0000-0000-000000000001",
+          "value": "risk",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "d6000000-0000-0000-0000-000000000172",
+          "nodeId": "d5000000-0000-0000-0000-000000000017",
+          "paramDefId": "d1000000-0000-0000-0000-000000000003",
+          "value": "planned",
+          "isEnabled": true,
+          "showOnCard": true
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "standard",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000018",
+      "title": "",
+      "description": "Why local-first\n\nEverything here runs on my own hardware, offline, no monthly fees. My data never leaves the house.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1440.0,
+      "y": 1056.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 300,
+      "height": 170
+    },
+    {
+      "id": "d5000000-0000-0000-0000-000000000019",
+      "title": "",
+      "description": "About this demo. A self-hosted home lab as a typed graph: hosts, services, storage, network, plus image / video / audio / note items and regions. Trace upstream of the NAS to see the blast radius if it fails.",
+      "eventDate": null,
+      "dateAdded": "2026-06-04T00:00:00Z",
+      "x": 1440.0,
+      "y": 1392.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 320,
+      "height": 190
+    }
+  ],
+  "edges": [
+    {
+      "id": "de000000-0000-0000-0000-000000000001",
+      "sourceId": "d5000000-0000-0000-0000-000000000005",
+      "targetId": "d5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000011",
+          "edgeId": "de000000-0000-0000-0000-000000000001",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000012",
+          "edgeId": "de000000-0000-0000-0000-000000000001",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000013",
+          "edgeId": "de000000-0000-0000-0000-000000000001",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000002",
+      "sourceId": "d5000000-0000-0000-0000-000000000007",
+      "targetId": "d5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000021",
+          "edgeId": "de000000-0000-0000-0000-000000000002",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000022",
+          "edgeId": "de000000-0000-0000-0000-000000000002",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000023",
+          "edgeId": "de000000-0000-0000-0000-000000000002",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000003",
+      "sourceId": "d5000000-0000-0000-0000-000000000008",
+      "targetId": "d5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000031",
+          "edgeId": "de000000-0000-0000-0000-000000000003",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000032",
+          "edgeId": "de000000-0000-0000-0000-000000000003",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000033",
+          "edgeId": "de000000-0000-0000-0000-000000000003",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000004",
+      "sourceId": "d5000000-0000-0000-0000-000000000006",
+      "targetId": "d5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000041",
+          "edgeId": "de000000-0000-0000-0000-000000000004",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000042",
+          "edgeId": "de000000-0000-0000-0000-000000000004",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000043",
+          "edgeId": "de000000-0000-0000-0000-000000000004",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000005",
+      "sourceId": "d5000000-0000-0000-0000-000000000009",
+      "targetId": "d5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000051",
+          "edgeId": "de000000-0000-0000-0000-000000000005",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000052",
+          "edgeId": "de000000-0000-0000-0000-000000000005",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000053",
+          "edgeId": "de000000-0000-0000-0000-000000000005",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000006",
+      "sourceId": "d5000000-0000-0000-0000-000000000010",
+      "targetId": "d5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000061",
+          "edgeId": "de000000-0000-0000-0000-000000000006",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000062",
+          "edgeId": "de000000-0000-0000-0000-000000000006",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000063",
+          "edgeId": "de000000-0000-0000-0000-000000000006",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000007",
+      "sourceId": "d5000000-0000-0000-0000-000000000009",
+      "targetId": "d5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000071",
+          "edgeId": "de000000-0000-0000-0000-000000000007",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000072",
+          "edgeId": "de000000-0000-0000-0000-000000000007",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000073",
+          "edgeId": "de000000-0000-0000-0000-000000000007",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000008",
+      "sourceId": "d5000000-0000-0000-0000-000000000010",
+      "targetId": "d5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000081",
+          "edgeId": "de000000-0000-0000-0000-000000000008",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000082",
+          "edgeId": "de000000-0000-0000-0000-000000000008",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000083",
+          "edgeId": "de000000-0000-0000-0000-000000000008",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000009",
+      "sourceId": "d5000000-0000-0000-0000-000000000005",
+      "targetId": "d5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000091",
+          "edgeId": "de000000-0000-0000-0000-000000000009",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000092",
+          "edgeId": "de000000-0000-0000-0000-000000000009",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000093",
+          "edgeId": "de000000-0000-0000-0000-000000000009",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000010",
+      "sourceId": "d5000000-0000-0000-0000-000000000006",
+      "targetId": "d5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000101",
+          "edgeId": "de000000-0000-0000-0000-000000000010",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000102",
+          "edgeId": "de000000-0000-0000-0000-000000000010",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000103",
+          "edgeId": "de000000-0000-0000-0000-000000000010",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000011",
+      "sourceId": "d5000000-0000-0000-0000-000000000013",
+      "targetId": "d5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000111",
+          "edgeId": "de000000-0000-0000-0000-000000000011",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000112",
+          "edgeId": "de000000-0000-0000-0000-000000000011",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000113",
+          "edgeId": "de000000-0000-0000-0000-000000000011",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000012",
+      "sourceId": "d5000000-0000-0000-0000-000000000014",
+      "targetId": "d5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000121",
+          "edgeId": "de000000-0000-0000-0000-000000000012",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "part-of",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000122",
+          "edgeId": "de000000-0000-0000-0000-000000000012",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000123",
+          "edgeId": "de000000-0000-0000-0000-000000000012",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#7766aa"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000013",
+      "sourceId": "d5000000-0000-0000-0000-000000000015",
+      "targetId": "d5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000131",
+          "edgeId": "de000000-0000-0000-0000-000000000013",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000132",
+          "edgeId": "de000000-0000-0000-0000-000000000013",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000133",
+          "edgeId": "de000000-0000-0000-0000-000000000013",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000014",
+      "sourceId": "d5000000-0000-0000-0000-000000000011",
+      "targetId": "d5000000-0000-0000-0000-000000000001",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000141",
+          "edgeId": "de000000-0000-0000-0000-000000000014",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000142",
+          "edgeId": "de000000-0000-0000-0000-000000000014",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000143",
+          "edgeId": "de000000-0000-0000-0000-000000000014",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000015",
+      "sourceId": "d5000000-0000-0000-0000-000000000012",
+      "targetId": "d5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000151",
+          "edgeId": "de000000-0000-0000-0000-000000000015",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "related",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000152",
+          "edgeId": "de000000-0000-0000-0000-000000000015",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000153",
+          "edgeId": "de000000-0000-0000-0000-000000000015",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "1",
+          "isEnabled": true
+        }
+      ],
+      "color": "#888888"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000016",
+      "sourceId": "d5000000-0000-0000-0000-000000000016",
+      "targetId": "d5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000161",
+          "edgeId": "de000000-0000-0000-0000-000000000016",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "depends-on",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000162",
+          "edgeId": "de000000-0000-0000-0000-000000000016",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000163",
+          "edgeId": "de000000-0000-0000-0000-000000000016",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "3",
+          "isEnabled": true
+        }
+      ],
+      "color": "#5588bb"
+    },
+    {
+      "id": "de000000-0000-0000-0000-000000000017",
+      "sourceId": "d5000000-0000-0000-0000-000000000017",
+      "targetId": "d5000000-0000-0000-0000-000000000016",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "waypoints": null,
+      "paramValues": [
+        {
+          "id": "df000000-0000-0000-0000-000000000171",
+          "edgeId": "de000000-0000-0000-0000-000000000017",
+          "paramDefId": "d3000000-0000-0000-0000-000000000001",
+          "value": "blocks",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000172",
+          "edgeId": "de000000-0000-0000-0000-000000000017",
+          "paramDefId": "d3000000-0000-0000-0000-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df000000-0000-0000-0000-000000000173",
+          "edgeId": "de000000-0000-0000-0000-000000000017",
+          "paramDefId": "d3000000-0000-0000-0000-000000000003",
+          "value": "2",
+          "isEnabled": true
+        }
+      ],
+      "color": "#c83030"
+    }
+  ],
+  "regions": [
+    {
+      "id": "d7000000-0000-0000-0000-000000000001",
+      "title": "Hardware",
+      "x": -64.0,
+      "y": 176.0,
+      "width": 1120.0,
+      "height": 688.0,
+      "color": "#5588bb",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "d7000000-0000-0000-0000-000000000002",
+      "title": "Core services",
+      "x": 1216.0,
+      "y": 176.0,
+      "width": 768.0,
+      "height": 576.0,
+      "color": "#7766aa",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "d7000000-0000-0000-0000-000000000003",
+      "title": "Media & storage",
+      "x": -64.0,
+      "y": 928.0,
+      "width": 1408.0,
+      "height": 768.0,
+      "color": "#3d9e5f",
+      "createdAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "id": "d7000000-0000-0000-0000-000000000004",
+      "title": "Backlog & risks",
+      "x": 1408.0,
+      "y": 928.0,
+      "width": 992.0,
+      "height": 768.0,
+      "color": "#c83030",
+      "createdAt": "2026-06-04T00:00:00Z"
+    }
+  ]
+}

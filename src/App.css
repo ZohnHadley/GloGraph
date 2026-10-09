@@ -1,0 +1,30 @@
+/* GloGraph application styles, split by component into ./styles/*.
+   IMPORTANT: order matters — the CSS cascade depends on it. These @imports reproduce
+   the original App.css source order exactly. When adding a component, create a new file
+   in ./styles/ and @import it at the right position here. */
+@import './styles/layout.css';
+@import './styles/chrome.css';
+@import './styles/buttons.css';
+@import './styles/sidebar.css';
+@import './styles/canvas.css';
+@import './styles/node-card.css';
+@import './styles/media-audio.css';
+@import './styles/edges.css';
+@import './styles/detail-panel.css';
+@import './styles/edge-panel.css';
+@import './styles/context-menu.css';
+@import './styles/react-flow.css';
+@import './styles/modal.css';
+@import './styles/settings.css';
+@import './styles/node-panel.css';
+@import './styles/shortcuts.css';
+@import './styles/regions.css';
+@import './styles/bookmarks.css';
+@import './styles/quick-connect.css';
+@import './styles/node-states.css';
+@import './styles/timeline.css';
+@import './styles/panels-misc.css';
+@import './styles/live-share.css';
+@import './styles/sidebar-stats.css';
+@import './styles/quick-find.css';
+@import './styles/screens.css';

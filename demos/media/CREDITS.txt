@@ -1,0 +1,7 @@
+GloGraph demo media — all assets are Creative Commons CC0 (public domain).
+
+Source: Kenney.nl asset packs (Pixel Platformer, Music Jingles, Interface Sounds).
+  https://kenney.nl  — released under CC0, no attribution required.
+
+gameplay-preview.mp4 was generated locally from the CC0 sprite art with ffmpeg,
+so it is CC0 as well. No third-party / copyrighted media is used.

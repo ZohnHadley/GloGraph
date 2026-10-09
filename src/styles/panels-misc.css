@@ -1,0 +1,111 @@
+/* ─── Bulk Edit Panel ─────────────────────────────────────────────────── */
+.bulk-edit-panel .detail-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bulk-edit-panel .detail-panel__header svg {
+  color: var(--accent);
+}
+
+.node-card--endpoint {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 2px 8px rgba(0, 0, 0, 0.65),
+    0 0 0 2px rgba(255, 176, 0, 0.75);
+  transition: box-shadow 0.15s;
+}
+
+/* ─── Impact-trace overlay (ephemeral) ──────────────────────────── */
+/* The seed node the trace radiates from: solid amber ring + glow. */
+.node-card--trace-seed {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 2px 10px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(255, 176, 0, 0.95),
+    0 0 16px rgba(255, 176, 0, 0.55);
+  transition: box-shadow 0.15s;
+}
+/* Reached nodes: lighter amber ring so the cascade reads at a glance. */
+.node-card--traced {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 2px 8px rgba(0, 0, 0, 0.65),
+    0 0 0 1.5px rgba(255, 176, 0, 0.5);
+  transition: box-shadow 0.15s;
+}
+
+.trace-control {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: 280px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+  padding: 10px 12px;
+  font-size: 12px;
+  user-select: none;
+}
+.trace-control__head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.trace-control__icon { color: var(--accent); flex-shrink: 0; }
+.trace-control__title {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.trace-control__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.trace-control__close:hover { color: var(--text); background: var(--surface-3); }
+.trace-control__dirs {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0 8px;
+}
+.trace-control__dir {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 6px;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 11px;
+}
+.trace-control__dir:hover { color: var(--text); }
+.trace-control__dir--active {
+  background: rgba(255, 176, 0, 0.16);
+  border-color: rgba(255, 176, 0, 0.6);
+  color: var(--accent);
+}
+.trace-control__stat {
+  margin: 0;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+.trace-control__stat strong { color: var(--text); }

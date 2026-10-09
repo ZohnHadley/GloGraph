@@ -1,0 +1,946 @@
+{
+  "version": 8,
+  "exportedAt": "2026-06-01T01:58:55.722958200+00:00",
+  "settings": {
+    "presetName": "Macro Economics",
+    "paramDefs": [
+      {
+        "id": "00000000-0000-0004-0000-000000000001",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Domain",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": true,
+        "showOnCardDefault": true,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0001-000000000001",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "political",
+            "label": "Political",
+            "color": "#388bfd",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000002",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "economic",
+            "label": "Economic",
+            "color": "#3fb950",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000003",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "natural",
+            "label": "Natural",
+            "color": "#d29922",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000004",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "market",
+            "label": "Financial",
+            "color": "#bc8cff",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000005",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "energy",
+            "label": "Energy",
+            "color": "#f78166",
+            "sortOrder": 4
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000006",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "social",
+            "label": "Social",
+            "color": "#f778ba",
+            "sortOrder": 5
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000008",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "policy",
+            "label": "Policy",
+            "color": "#e8c86e",
+            "sortOrder": 6
+          },
+          {
+            "id": "00000000-0000-0005-0001-000000000007",
+            "paramDefId": "00000000-0000-0004-0000-000000000001",
+            "valueSlug": "other",
+            "label": "Other",
+            "color": "#8b949e",
+            "sortOrder": 7
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0004-0000-000000000002",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Status",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 1,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0002-000000000001",
+            "paramDefId": "00000000-0000-0004-0000-000000000002",
+            "valueSlug": "confirmed",
+            "label": "Confirmed",
+            "color": "#3d9e5f",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0002-000000000002",
+            "paramDefId": "00000000-0000-0004-0000-000000000002",
+            "valueSlug": "expected",
+            "label": "Expected",
+            "color": "#d68b2a",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0002-000000000003",
+            "paramDefId": "00000000-0000-0004-0000-000000000002",
+            "valueSlug": "speculative",
+            "label": "Speculative",
+            "color": "#888888",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0002-000000000004",
+            "paramDefId": "00000000-0000-0004-0000-000000000002",
+            "valueSlug": "rejected",
+            "label": "Rejected",
+            "color": "#c83030",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0004-0001-000000000003",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Region",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesColor": false,
+        "showOnCardDefault": false,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "00000000-0000-0005-0003-000000000001",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "global",
+            "label": "Global",
+            "color": "#888888",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0005-0003-000000000002",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "americas",
+            "label": "Americas",
+            "color": "#3fb950",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0005-0003-000000000003",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "europe",
+            "label": "Europe",
+            "color": "#388bfd",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0005-0003-000000000004",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "asia_pac",
+            "label": "Asia-Pacific",
+            "color": "#d68b2a",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0005-0003-000000000005",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "mea",
+            "label": "Middle East/Africa",
+            "color": "#f78166",
+            "sortOrder": 4
+          },
+          {
+            "id": "00000000-0000-0005-0003-000000000006",
+            "paramDefId": "00000000-0000-0004-0001-000000000003",
+            "valueSlug": "em",
+            "label": "Emerging Markets",
+            "color": "#7766aa",
+            "sortOrder": 5
+          }
+        ]
+      }
+    ],
+    "edgeParamDefs": [
+      {
+        "id": "00000000-0000-0006-0001-000000000001",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Causation",
+        "paramType": "select_color",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": true,
+        "drivesWidth": false,
+        "sortOrder": 0,
+        "options": [
+          {
+            "id": "00000000-0000-0007-0001-000000000001",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "caused_by",
+            "label": "Caused By",
+            "color": "#c83030",
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000002",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "correlated",
+            "label": "Correlates With",
+            "color": "#388bfd",
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000003",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "supports",
+            "label": "Amplifies",
+            "color": "#3d9e5f",
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000004",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "opposes",
+            "label": "Offsets",
+            "color": "#f78166",
+            "sortOrder": 3
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000005",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "hedge",
+            "label": "Hedges Against",
+            "color": "#d68b2a",
+            "sortOrder": 4
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000006",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "reaction",
+            "label": "Reacts To",
+            "color": "#7766aa",
+            "sortOrder": 5
+          },
+          {
+            "id": "00000000-0000-0007-0001-000000000007",
+            "paramDefId": "00000000-0000-0006-0001-000000000001",
+            "valueSlug": "preceded",
+            "label": "Preceded By",
+            "color": "#8b949e",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000002",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Directed",
+        "paramType": "boolean",
+        "defaultValue": "true",
+        "drivesArrow": true,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000003",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Line Style",
+        "paramType": "select",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": true,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 2,
+        "options": [
+          {
+            "id": "00000000-0000-0007-0003-000000000001",
+            "paramDefId": "00000000-0000-0006-0001-000000000003",
+            "valueSlug": "default",
+            "label": "Bezier (curved)",
+            "color": null,
+            "sortOrder": 0
+          },
+          {
+            "id": "00000000-0000-0007-0003-000000000002",
+            "paramDefId": "00000000-0000-0006-0001-000000000003",
+            "valueSlug": "straight",
+            "label": "Straight",
+            "color": null,
+            "sortOrder": 1
+          },
+          {
+            "id": "00000000-0000-0007-0003-000000000003",
+            "paramDefId": "00000000-0000-0006-0001-000000000003",
+            "valueSlug": "step",
+            "label": "Step",
+            "color": null,
+            "sortOrder": 2
+          },
+          {
+            "id": "00000000-0000-0007-0003-000000000004",
+            "paramDefId": "00000000-0000-0006-0001-000000000003",
+            "valueSlug": "smoothstep",
+            "label": "Smooth Step",
+            "color": null,
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000004",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Strength",
+        "paramType": "number",
+        "defaultValue": "5",
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": true,
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000005",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Notes",
+        "paramType": "text",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000006",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Correlation",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000007",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Time Lag (days)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "id": "00000000-0000-0006-0001-000000000008",
+        "presetId": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Confidence (%)",
+        "paramType": "number",
+        "defaultValue": null,
+        "drivesArrow": false,
+        "drivesStyle": false,
+        "drivesColor": false,
+        "drivesWidth": false,
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "a5000000-0000-0000-0000-000000000001",
+      "title": "Russia Invades Ukraine",
+      "description": "Russia's full-scale invasion on Feb 24 2022 sent immediate shockwaves through global energy and food supply chains.",
+      "eventDate": "2022-02-24",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 160.0,
+      "y": 352.0,
+      "color": null,
+      "confidence": 10,
+      "impactMagnitude": 10,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "64f93b48-efa3-455f-9ba8-1f02c8bed835",
+          "nodeId": "a5000000-0000-0000-0000-000000000001",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "political",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "078c2cf5-9019-4d07-a96f-e5a18a65ca3f",
+          "nodeId": "a5000000-0000-0000-0000-000000000001",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000002",
+      "title": "Global Energy Price Spike",
+      "description": "Brent crude surged past $130/bbl in March 2022 as Russian supply was cut off. Europe's gas prices hit record highs.",
+      "eventDate": "2022-03-08",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 640.0,
+      "y": 128.0,
+      "color": null,
+      "confidence": 10,
+      "impactMagnitude": 9,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "8015afe5-05aa-42f7-9e6e-5f1c283eae0d",
+          "nodeId": "a5000000-0000-0000-0000-000000000002",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "energy",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "381d7d4f-ea59-4b84-aa49-2b00185008fe",
+          "nodeId": "a5000000-0000-0000-0000-000000000002",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000003",
+      "title": "Food Supply Shock",
+      "description": "Ukraine and Russia supply 30% of global wheat. Black Sea port blockades sent food prices up 30% in weeks.",
+      "eventDate": "2022-03-15",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 640.0,
+      "y": 608.0,
+      "color": null,
+      "confidence": 9,
+      "impactMagnitude": 8,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "309f1616-288c-48bc-8e12-b00294b01d51",
+          "nodeId": "a5000000-0000-0000-0000-000000000003",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "economic",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "7e27c4e9-d22e-4ca4-b436-9e26e993f112",
+          "nodeId": "a5000000-0000-0000-0000-000000000003",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000004",
+      "title": "US CPI Peaks at 9.1%",
+      "description": "June 2022 — the highest US inflation reading since 1981. Supply shock collided with post-pandemic demand surge.",
+      "eventDate": "2022-06-10",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1120.0,
+      "y": 352.0,
+      "color": null,
+      "confidence": 10,
+      "impactMagnitude": 9,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "b77f1340-64b4-4a11-9469-5bb17ad1423b",
+          "nodeId": "a5000000-0000-0000-0000-000000000004",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "economic",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "8910e310-09ea-407a-b3c7-41f3f2e2ad7e",
+          "nodeId": "a5000000-0000-0000-0000-000000000004",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000005",
+      "title": "Fed Rate Hike Cycle",
+      "description": "Five consecutive 75bps hikes through 2022 — the most aggressive Fed tightening since Volcker in the 1980s.",
+      "eventDate": "2022-06-15",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1600.0,
+      "y": 128.0,
+      "color": null,
+      "confidence": 10,
+      "impactMagnitude": 10,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "542d3981-3ff8-481d-bf93-8f6adb116975",
+          "nodeId": "a5000000-0000-0000-0000-000000000005",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "policy",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "fea9c7fa-19a8-451d-bdad-3a81d4d58e60",
+          "nodeId": "a5000000-0000-0000-0000-000000000005",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000006",
+      "title": "USD Hits 20-Year High",
+      "description": "DXY surged to 114 in September 2022 as US rates diverged sharply from the rest of the world.",
+      "eventDate": "2022-09-28",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 1600.0,
+      "y": 576.0,
+      "color": null,
+      "confidence": 10,
+      "impactMagnitude": 8,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "a26c903e-672b-40b4-81d1-0dd8afee0949",
+          "nodeId": "a5000000-0000-0000-0000-000000000006",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "market",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "ba99d6d0-df3f-42f7-92f4-a5820108b600",
+          "nodeId": "a5000000-0000-0000-0000-000000000006",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "a5000000-0000-0000-0000-000000000007",
+      "title": "Emerging Market Stress",
+      "description": "Strong dollar crushed EM economies — Sri Lanka defaulted, Pakistan sought IMF bailout, Egypt devalued 50%.",
+      "eventDate": "2022-10-01",
+      "dateAdded": "2026-05-25T00:00:00Z",
+      "x": 2080.0,
+      "y": 352.0,
+      "color": null,
+      "confidence": 9,
+      "impactMagnitude": 7,
+      "externalId": null,
+      "tags": [],
+      "dataSource": null,
+      "links": [],
+      "media": [],
+      "paramValues": [
+        {
+          "id": "14c7a311-deec-417b-97e5-b9246c3249e0",
+          "nodeId": "a5000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0004-0000-000000000001",
+          "value": "market",
+          "isEnabled": true,
+          "showOnCard": true
+        },
+        {
+          "id": "350b372b-1c25-4c16-8f79-22f9e33b7146",
+          "nodeId": "a5000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0004-0000-000000000002",
+          "value": "confirmed",
+          "isEnabled": true,
+          "showOnCard": false
+        },
+        {
+          "id": "0dfd8a5f-8b55-4169-b969-55c6ad6816c6",
+          "nodeId": "a5000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0004-0001-000000000003",
+          "value": "em",
+          "isEnabled": true,
+          "showOnCard": false
+        }
+      ],
+      "isPinned": false,
+      "isExpandPinned": false
+    },
+    {
+      "id": "0391be49-4a28-4283-9915-4a7a0444a612",
+      "title": "About this demo",
+      "description": "This is a Note — one of GloGraph's graph objects (alongside image, video, and audio). This map traces the 2022–2023 macro crisis: rate hikes, energy shocks, and market stress. Click to edit a note inline, drag its corner to resize, and connect it like any object.",
+      "eventDate": null,
+      "dateAdded": "2026-06-02T00:00:00Z",
+      "x": 160.0,
+      "y": -192.0,
+      "color": null,
+      "confidence": null,
+      "impactMagnitude": null,
+      "tags": [],
+      "links": [],
+      "media": [],
+      "paramValues": [],
+      "isPinned": false,
+      "isExpandPinned": false,
+      "zOrder": 0,
+      "kind": "note",
+      "width": 280,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "ae000000-0000-0000-0000-000000000001",
+      "sourceId": "a5000000-0000-0000-0000-000000000001",
+      "targetId": "a5000000-0000-0000-0000-000000000002",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "6042db83-7047-4664-9fef-2ceaa8d69d66",
+          "edgeId": "ae000000-0000-0000-0000-000000000001",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "caused_by",
+          "isEnabled": true
+        },
+        {
+          "id": "19a02a14-fe53-4a14-8138-c7e9ed271d0c",
+          "edgeId": "ae000000-0000-0000-0000-000000000001",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "acefdfad-0d22-4248-b6a0-a8c42c9e1db0",
+          "edgeId": "ae000000-0000-0000-0000-000000000001",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "8",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000002",
+      "sourceId": "a5000000-0000-0000-0000-000000000001",
+      "targetId": "a5000000-0000-0000-0000-000000000003",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "82385bba-bf1f-4141-9b99-a9156fbbf18e",
+          "edgeId": "ae000000-0000-0000-0000-000000000002",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "caused_by",
+          "isEnabled": true
+        },
+        {
+          "id": "4036e0c8-7034-4e43-8748-595f720c5eb7",
+          "edgeId": "ae000000-0000-0000-0000-000000000002",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "b7a269ab-7207-41a7-bb45-685449cfca36",
+          "edgeId": "ae000000-0000-0000-0000-000000000002",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "7",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000003",
+      "sourceId": "a5000000-0000-0000-0000-000000000002",
+      "targetId": "a5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "b84f45de-0ae6-4f76-92d0-9e7a4aaea335",
+          "edgeId": "ae000000-0000-0000-0000-000000000003",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "supports",
+          "isEnabled": true
+        },
+        {
+          "id": "be6ac3ae-5b34-4dd9-8599-1ad7c4a0a86d",
+          "edgeId": "ae000000-0000-0000-0000-000000000003",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "5c0572e0-f865-42ef-804d-6010141cca78",
+          "edgeId": "ae000000-0000-0000-0000-000000000003",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "8",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000004",
+      "sourceId": "a5000000-0000-0000-0000-000000000003",
+      "targetId": "a5000000-0000-0000-0000-000000000004",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "9d6706f1-cf69-48fe-b71b-b2ceecae4619",
+          "edgeId": "ae000000-0000-0000-0000-000000000004",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "supports",
+          "isEnabled": true
+        },
+        {
+          "id": "2992435e-e267-407a-8500-3f0d1e0daf73",
+          "edgeId": "ae000000-0000-0000-0000-000000000004",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "382d7581-dc1a-4d83-9f1c-619c6fb2071b",
+          "edgeId": "ae000000-0000-0000-0000-000000000004",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "6",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#3d9e5f"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000005",
+      "sourceId": "a5000000-0000-0000-0000-000000000004",
+      "targetId": "a5000000-0000-0000-0000-000000000005",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "7350bfb0-6574-46f8-bfa7-aa9329942a29",
+          "edgeId": "ae000000-0000-0000-0000-000000000005",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "caused_by",
+          "isEnabled": true
+        },
+        {
+          "id": "98a4a88e-1cc0-42fd-84d0-acbdda3a52a2",
+          "edgeId": "ae000000-0000-0000-0000-000000000005",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "df0948ad-d1bf-4fa3-ab2e-63884b84544d",
+          "edgeId": "ae000000-0000-0000-0000-000000000005",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "9",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000006",
+      "sourceId": "a5000000-0000-0000-0000-000000000005",
+      "targetId": "a5000000-0000-0000-0000-000000000006",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "paramValues": [
+        {
+          "id": "6941a7f7-e1e5-4764-8d48-45f2c213e8ec",
+          "edgeId": "ae000000-0000-0000-0000-000000000006",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "caused_by",
+          "isEnabled": true
+        },
+        {
+          "id": "4ab1161e-9965-473e-8149-b0c5a0f50786",
+          "edgeId": "ae000000-0000-0000-0000-000000000006",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "71681a4d-28c9-4c97-8ba2-722cd67802ee",
+          "edgeId": "ae000000-0000-0000-0000-000000000006",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "7",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    },
+    {
+      "id": "ae000000-0000-0000-0000-000000000007",
+      "sourceId": "a5000000-0000-0000-0000-000000000006",
+      "targetId": "a5000000-0000-0000-0000-000000000007",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "paramValues": [
+        {
+          "id": "08e8043d-affa-437b-9130-4094bdd2330b",
+          "edgeId": "ae000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0006-0001-000000000001",
+          "value": "caused_by",
+          "isEnabled": true
+        },
+        {
+          "id": "94032686-83e6-430b-bd30-f417770f33a4",
+          "edgeId": "ae000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0006-0001-000000000002",
+          "value": "true",
+          "isEnabled": true
+        },
+        {
+          "id": "b221f867-16f4-43a8-ad3c-d157b51ede30",
+          "edgeId": "ae000000-0000-0000-0000-000000000007",
+          "paramDefId": "00000000-0000-0006-0001-000000000004",
+          "value": "6",
+          "isEnabled": true
+        }
+      ],
+      "waypoints": null,
+      "externalId": null,
+      "label": null,
+      "color": "#c83030"
+    }
+  ],
+  "regions": [
+    {
+      "id": "a7000000-0000-0000-0000-000000000001",
+      "title": "Supply Shock",
+      "x": 137.6,
+      "y": 36.8,
+      "width": 800.0,
+      "height": 704.0,
+      "color": "#f78166",
+      "zOrder": 0,
+      "isLocked": true,
+      "isMinimized": false,
+      "createdAt": "2026-06-01T01:20:55.580847200+00:00"
+    },
+    {
+      "id": "a7000000-0000-0000-0000-000000000002",
+      "title": "Policy Response",
+      "x": 1520.0,
+      "y": 48.0,
+      "width": 464.0,
+      "height": 704.0,
+      "color": "#e8c86e",
+      "zOrder": 0,
+      "isLocked": true,
+      "isMinimized": false,
+      "createdAt": "2026-06-01T01:20:55.580847200+00:00"
+    }
+  ],
+  "bookmarks": null,
+  "graphNotes": null
+}
